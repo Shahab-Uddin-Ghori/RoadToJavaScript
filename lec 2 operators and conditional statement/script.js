@@ -310,3 +310,15 @@ console.log("\n\t\t\t logical OR || operators \n\n");
         console.log("invalid age");
     }
 }
+
+/// ternary operator
+// ternary has three operands  1.condtion 2.output true 3. output false..
+// ternary operator chack condtion if condition is true then give first output if condition is false then give second output 
+// condition ? true:false 
+// example  a? b:c {a has condtion} , {b has arrgument work if condition is true}, {c has 2nd arrgument work if condition is flase}
+// you can say that it is another method of if else
+{
+    let age = 25
+    let result = age>=18 ? "adult" : "not adult" 
+    console.log(result);
+}
