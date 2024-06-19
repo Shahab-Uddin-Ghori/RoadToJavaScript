@@ -1,0 +1,72 @@
+//////// first lec of Js " Variables and Data Types """"""""""""
+
+Q1. what is javaScript?
+Ans. JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else..
+
+when node.js came its not limited of browsers only now..
+
+extension of javaScript is .js
+
+/////////// book using for now is A Smarter Way to Learn JavaScript """""""""""""""
+
+
+important Variables .
+
+Q2. Variables in javaScript
+
+Variables are containers for data...
+
+Variables are containers for data it can be change as name vary means it can be changible...
+ when se create varible it store in somewhere in our system memory the size may be small or larger w.r to what is in varible conatainer 
+
+ Variable Rules
+1. Variable names are case sensitive; “a” & “A” is different.
+2. Only letters, digits , underScore and $ are allowed. not even space 
+3. Only letters, underScore or $ should be first character
+4. Reserved word cannot be Variable. alert, window, function, let , var , const etc
+
+variable in JavaScript
+
+let, const & var
+
+var : Variable can be re-declared & updated. A global scope variable.
+
+let : Variable cannot be re-declared but can be updated. A block scope variable.
+
+const : Variable cannot be re-declared or updated. A block scope variable.
+
+
+//////////////////////////////  On of the most impt topics ////////////////////////////
+
+Q3. Data Types in JS..
+
+Primitive Types : Number, String, Boolean, Undefined, Null, BigInt, Symbol // means buit in Behaviour perform by javaScript
+Non Primitive Types: Objects, Arrays and Functions  // custom Behaviour.
+
+// 1. Strings 
+// a data type that helps us store an arrangement of characters.
+
+A sequence of characters in JavaScript refers to a linear arrangement of individual characters that form a string. A character sequence can include letters, numbers, symbols, and whitespace. Each character in the sequence has a specific index or position, starting from 0 : const greeting = 'Hello, World!
+
+
+4. undefine
+console.log("*******Undefined**********");
+// a variable has been declared but has not yet been assigned a value.
+let userName;
+console.log(userName); // console show undefine bcz variable is initilized but not defined..
+
+// const emailAddress2; we cannot create undefine type by const bcz const cannot be reassigned.
+// console.log(emailAddress2); // we see error in consloe. 
+
+5. null
+an assignment value that represents no value or no object. 
+The value null is written with a literal: null. null is not an identifier for a property of the global object, like undefined can be. Instead, null expresses a lack of identification, indicating that a variable points to no object. In APIs, null is often retrieved in a place where an object can be expected but no object is relevant.
+use .
+to indicate that a variable has no value or that an object does not exist.
+
+6.BigInt
+represent numeric values which are too large to be represented by the number primitive
+
+7. Symbols
+ Symbols are the primitive type introduced to Javascript in ECMAScript 6. Their primary purpose is to have a unique result every time they are constructed. You can think of symbols as special tokens that guarantee uniqueness (like UUID). There are two types of symbols. I will call them scoped and global.
+
