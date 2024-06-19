@@ -417,3 +417,30 @@ switch (type) {
     console.log("Unknown type.");
 }
 
+////////////////////// practice Question //////////////////////
+
+// Q1. Get input a number from user using a prompt("Enter Number"). Check number is divisible by 5 or not?
+/// by if else.
+{
+    console.log("by if else ");
+    let num = +prompt("Enter number")
+    if (num%5 === 0) {
+        console.log(num +" is Divisible by 5");
+    }else {
+        console.log("number is not divisible by 5");
+    }
+}
+
+// by switch 
+{
+    console.log("by switch");
+    let num = +prompt("Enter number")
+    switch (true){
+        case (num% 5=== 0):
+            console.log(num + " is divisible by 5");
+            break;
+        default:
+            console.log(num + " is not divisible by 5");
+            break;
+    }
+}
