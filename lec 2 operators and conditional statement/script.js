@@ -259,7 +259,36 @@ console.log("\n\t\t\t logical OR || operators \n\n");
     console.log(!(num1>num2));//false
 }
 
+///////////////////////////////////////////////// conditonal statement in js ////////////////////////////////////////////////////// 
 
+// we use  logical operators or making conditions A/C to these condtion we have to decide a piece of code work at certain conditions..called condtional statement
+// if the condition is true then code will exicute otherwise not 
+// if and elase
+// if() {}  it will work is the conditon is in paranthesis/ small brackets is true then curly bracket or scope code will work
+{
+    let age = 24 ;
+    if (age > 18) {
+        console.log("Your can Vote"); //will exicute
+    }else{
+        console.log("you are not eligible for voting"); // will not  exicute bcz condition is false
+    }
+}
 
+{
+    let age = 24 ;
+    if (age < 18) {
+        console.log("you are not eligible for voting"); // will not exicute bcz condition is not true
+    }else{
+        console.log("You can Vote"); // wil exicute bcz age is greater than 18
+    }
+}
 
-
+{
+    // chk num is even or odd 
+    let num = 12;
+    if (num%2 === 0) {
+        console.log("num is even");
+    } else {
+        console.log("numb is odd");
+    }
+}
