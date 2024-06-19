@@ -292,3 +292,21 @@ console.log("\n\t\t\t logical OR || operators \n\n");
         console.log("numb is odd");
     }
 }
+// chacking multiple conditions if else if and elase 
+{
+    let age =20
+    if (age >=60 ) {
+        console.log("old"); 
+    } else if(age >= 40 && age<60){
+
+        console.log("Men");
+    } else if (age >= 19 && age <40) {
+        console.log("Young");
+    } else if (age>=13 && age <= 18){
+        console.log("teenage");
+    }else if (age > 0 && age <=12) {
+        console.log("kids");       
+    }else {
+        console.log("invalid age");
+    }
+}
