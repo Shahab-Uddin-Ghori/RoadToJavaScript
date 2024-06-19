@@ -1,0 +1,32 @@
+single line comments //
+ multiline comments /* your text */
+
+ operators..
+ /////////////////////////
+ Airthmetic operators
+ increament +
+ decrement -
+ multiplicaton *
+ division /
+ power **
+ modulus/remainder %
+ //////////////////////
+
+unary operators 
+////////////////////////////////
+
+Unary operators in JavaScript operate on a single operand to produce a result. Here are the main unary operators with simple examples:
+1. Unary Plus (+): Converts its operand to a number.
+2. Unary Negation (-): Converts its operand to a number and then negates it.
+3. Increment (++):
+Purpose: Increases its operand by one.
+4. Decrement (--):
+Purpose: Decreases its operand by one.
+5. Logical NOT (!):
+Purpose: Converts its operand to a boolean and negates it.
+6.Bitwise NOT (~):
+Purpose: Inverts all the bits of its operand.
+7. Typeof:
+Purpose: Returns a string indicating the type of the operand.
+8. Delete:
+Purpose: Removes a property from an object.
