@@ -160,6 +160,104 @@ console.log("\t\t\t assignment operators \n");
     console.log("%= " + a); //2
 }
 
+///////////////////////////////////////////////// comparison Operators in js ////////////////////////////////////////////////////// 
+console.log("\t\t\t comparision operators \n");
+
+// Return Ture or False statement A/C conditions
+
+// equal to == 
+// not equal to !=
+// equal and type === 
+// not equal and type !==
+// >  greater than 
+// < less than
+// >= greater than equal to
+// <= lesser than equal to
+
+{
+    let a = 5
+    let b = 5
+    let c = "5"
+    let d = "10"
+    let e = 1
+    let f = -5
+    console.log(a == b); // equal to operator chk only value not type. so output is true  ///trure
+    console.log(a === b); // as a and b both value and type is num so "value and type/strick operator" return True.  //true
+    console.log(a == c); // true bcz only check value "equal to operator" //true
+    console.log(a === c); // false bcz "strick operator" value and type both chk and typeof a is number and typeof c is string. //false
+    console.log(a !== c); // we use not equal to with typechk/strick operator output is True.  ///true
+    console.log(a != c); // we use not equal to operator output is false. bcz type is not checking //
+    console.log(c == d);//false
+    console.log(c !== d);//true
+    console.log(c === d);//false
+    console.log(c !== d);//false
+    console.log(a>b);//false 
+    console.log(a<b);//false
+    console.log(a>=b);//true
+    console.log(a<=b);//true
+
+}
+///////////////////////////////////////////////// logical Operators in js ////////////////////////////////////////////////////// 
+console.log("\t\t\t logical operators \n\n");
+// evalute multiple expression and give single output as /// true or false
+// logical AND && 
+// for logical AND && all consitions must be same/Trure to give output /////// True
+{
+console.log("\t\t\t logical AND && operators \n\n");
+    let num1 = 5
+    let num2 = 4
+    let condition1 = num1 > num2
+    console.log("condition1 = num1 > num2 " + condition1); //true
+    let num3 = 1
+    let condition2 = num3 < num1
+    console.log("condition2 = num3 < num1 " + condition2); //true
+    let num4 = 1
+    let condition3 = num3 < num2
+    console.log("condition3 = num3 < num2 " + condition3); //true
+    console.log("\nchk logical AND &&.. give true only if all condions are true");
+    console.log("condition1 && condition2 && condition3 all are true" );
+    console.log(condition1 && condition2 && condition3);
+    console.log("if one condition is false output will be false");
+    let condition4 = num2 > num1
+    console.log("condition4 = num2 > num1  " + condition4);//false
+    console.log("condition1 && condition2 && condition3 && condition44 = false");
+    console.log(condition1 && condition2 && condition3 &&condition4);
+}
+
+
+// logical OR ||
+
+{
+    // if any 1 condiotion is true output will be true only all conditions are false then return false.
+console.log("\n\t\t\t logical OR || operators \n\n");
+    let num1 = 5
+    let num2 = 4
+    let condition1 = num1 > num2
+    console.log("condition1 = num1 > num2 " + condition1); //true
+    let num3 = 1
+    let condition2 = num3 > num1
+    console.log("condition2 = num3 < num1 " + condition2); //false
+    let num4 = 1
+    let condition3 = num3 > num2
+    console.log("condition3 = num3 < num2 " + condition3); //false
+    console.log("\nchk logical OR ||. give true  if any one condions is true.  Return false if all conditions are flase");
+    console.log("\n condition 1 is true except all false so return will be true");
+    console.log(condition1 || condition2 || condition3); // true return bcz condition 1 is true 
+    console.log("\n both condition false so return will be false");
+    console.log(condition2 || condition3); // true return bcz condition 1 is true 
+}
+// logical NOT !
+// logical not change the output if the condition return ture it change into false and false ouput change into True.. reqruied only one condition/ final conditon
+{
+    console.log("\n\t\t\t logical Not ! operators \n\n");
+    let num1 = 5
+    let num2 = 4
+    let condition1 = num1 > num2
+    console.log("condition1 without NOT != num1 > num2 " + condition1); //true
+    console.log("condition1 with NOt ! = num1 > num2 " + !(condition1)); //false
+    console.log(!(num1<num2));//true  bcz/ ! NOT operator
+    console.log(!(num1>num2));//false
+}
 
 
 

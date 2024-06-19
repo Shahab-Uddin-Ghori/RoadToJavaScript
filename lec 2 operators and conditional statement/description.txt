@@ -30,3 +30,15 @@ Purpose: Inverts all the bits of its operand.
 Purpose: Returns a string indicating the type of the operand.
 8. Delete:
 Purpose: Removes a property from an object.
+
+///////////////////////////////////////////////// comparison Operators in js ////////////////////////////////////////////////////// 
+Return Ture or False statement A/C conditions
+
+// equal to == 
+// not equal to !=
+// equal and type === 
+// not equal and type !==
+// >  greater than 
+// < less than
+// >= greater than equal to
+// <= lesser than equal to
