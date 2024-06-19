@@ -421,26 +421,61 @@ switch (type) {
 
 // Q1. Get input a number from user using a prompt("Enter Number"). Check number is divisible by 5 or not?
 /// by if else.
-{
-    console.log("by if else ");
-    let num = +prompt("Enter number")
-    if (num%5 === 0) {
-        console.log(num +" is Divisible by 5");
-    }else {
-        console.log("number is not divisible by 5");
-    }
-}
+// {
+//     console.log("by if else ");
+//     let num = +prompt("Enter number")
+//     if (num%5 === 0) {
+//         console.log(num +" is Divisible by 5");
+//     }else {
+//         console.log("number is not divisible by 5");
+//     }
+// }
 
 // by switch 
+// {
+//     console.log("by switch");
+//     let num = +prompt("Enter number")
+//     switch (true){
+//         case (num% 5=== 0):
+//             console.log(num + " is divisible by 5");
+//             break;
+//         default:
+//             console.log(num + " is not divisible by 5");
+//             break;
+//     }
+// }
+
+// Q2. write a code which can give  grades to students according to their scores
 {
-    console.log("by switch");
-    let num = +prompt("Enter number")
-    switch (true){
-        case (num% 5=== 0):
-            console.log(num + " is divisible by 5");
-            break;
-        default:
-            console.log(num + " is not divisible by 5");
-            break;
+    let scoreInMath = +prompt("Enter Maths Marks");
+    if (scoreInMath <0 || scoreInMath > 100) {
+        alert("Invalid marks enter between 0 ~ 100");
+    }
+    let scoreInPhysics = +prompt("Enter  Physics Marks");
+    if (scoreInPhysics <0 || scoreInPhysics > 100) {
+        alert("Invalid marks enter between 0 ~ 100");
+    }
+    let scoreInComputer = +prompt("Enter  Computer Marks");
+    if (scoreInComputer <0 || scoreInComputer > 100) {
+        alert("Invalid marks enter between 0 ~ 100");
+    }
+    const total = (scoreInComputer + scoreInMath + scoreInPhysics)
+    if (total <0 || total > 300) {
+        alert("Invalid marks");
+    }
+    let percentage = (total/300)*100
+    if (percentage >=80 && percentage <=100) {
+        console.log("Your Grade is A1");
+    }
+    if (percentage >=70 && percentage <80) {
+        console.log("Your Grade is A");
+    }
+    if (percentage >=60 && percentage <70) {
+        console.log("Your Grade is B");
+    }
+    if (percentage >=50 && percentage <60) {
+        console.log("Your Grade is C");
+    }else if (percentage < 50) {
+        console.log("You are Fail");
     }
 }
