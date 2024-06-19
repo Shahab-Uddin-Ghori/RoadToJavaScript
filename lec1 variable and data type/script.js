@@ -173,11 +173,11 @@ console.log(sym1);// Symbol() output.
 
 // can make
 const myFatherName = "Nisar" // correct way called camelCase preffered way globally..
-const MyFatherName = "Ali" // can make not preffered
+const MyFatherName = "Ali" // can make not preffered. pascal case
+const age_diff_boys = "can make" // can make its called snake case
 const MYNAME = "Raza" // can make but only if the value is fixed/permenant not changible..
 const $name = "ghori" // can Make
 const _ghori = "myname" // can make.
-const age_diff_boys = "can make" // can make its called snake case
 const data1 = "data" //can make.
 const data2 = "data2" // can make
 const locaion = 14; // both are diff location and Location bcz its case sensitive..
@@ -185,6 +185,7 @@ const Locaion = 14
 
 // can not make 
 
+// const full-school = "ali raza" not allowed
 // const 1name = "ghori" // intial num not allowed.
 // const my name = "shahab"; // space not allowed
 // const alert = "popup" ; 
@@ -193,6 +194,29 @@ const Locaion = 14
 // const let = "123" not allowed reserved words..
 
 
+// objects simple for const variable understanding..
+const students = {
+    name: "shahab",
+    age: 24,
+    isPresent: true,
+
+};
+console.log(students);
+
+students["name"] = "ghori";
+students["age"] = 25;
+students["isPresent"] = false;
+console.log(students);
+
+
+// Q1. Create a const called product to store information show in the picture 
+const product = {
+    name: "CT ball pen",
+    rating: 4.5,
+    offer: 5,
+    price: 200,
+}
+console.log(product);
 
 
 
