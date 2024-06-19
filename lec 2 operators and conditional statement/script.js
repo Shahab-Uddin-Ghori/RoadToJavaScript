@@ -13,6 +13,8 @@ console.log(`\t\t\t Arithmetic Operation for a and b \nadd is ${add}\ndiff is ${
 
 
 ///////////////////////////////////////////////// Unary Operators in js ////////////////////////////////////////////////////// 
+console.log("\t\t\t unary operators \n");
+
 //1. Unary Plus (+):
 // Purpose: Converts its operand to a number.
 let a1 = "5";
@@ -104,10 +106,59 @@ console.log("true typeof" + " " + typeof true); // boolean
 console.log("undefined typeof" + " " + typeof undefined); // undefine
 
 
+///////////////////////////////////////////////// assignment Operators in js ////////////////////////////////////////////////////// 
+console.log("\t\t\t assignment operators \n");
+// =, +=, -=, *=, %=, **=
+// left = right // in js values move right sight to left 
 
+// = 
+// a = 5
+// a = "adasd"
 
+//+=
+// let a = 1
+// a += 1 => a= a + 1
+//let b=5
+// b +=5 => b= b+ 5
+{
+    let a = 5;
+    a+= 1
+    console.log("+= " + a); // 6
+}
+{
+    let b = 5;
+    b+= 5
+    console.log("+= " + b); // 10
+}
 
+// -=
+{
 
+    let a =5
+    a-= 2
+    console.log("-= " + a); //3
+}
+
+//*=
+{
+    let a = 5
+    a*= 10
+    console.log("* " + a); //50
+}
+
+// **=
+{
+    let a = 2
+    a**=4
+    console.log("**= " + a); // 16
+}
+
+// %=
+{
+    let a = 10
+    a%= 4
+    console.log("%= " + a); //2
+}
 
 
 
