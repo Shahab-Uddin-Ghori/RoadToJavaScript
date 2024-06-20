@@ -85,3 +85,19 @@ for (let val of colors){ //iterator => characters
 }
 console.log(array); // getting lenght of array
 }
+
+// for-in loop usally use on objects. also can be use for 
+//for-in loop use for objects it return objects key
+{
+console.log("\n\t\t\t\t\ For-in Loop.");
+console.log(" For-in Loop. on objects");
+    const student = {
+        studentName: "Noman",
+        age: 24,
+        NIC: "12345678",
+        isPresent: true
+    }
+    for (let key in student){
+        console.log(`key = ${key} then value = ${student[key]}`);
+    }
+}
