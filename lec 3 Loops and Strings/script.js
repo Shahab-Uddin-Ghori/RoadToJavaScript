@@ -71,8 +71,20 @@ console.log("\n\t\t\t\t\ For-of Loop.");
 console.log(" For-of Loop. on string");
 {
     let myName = "Shahab Uddin Ghori"
-    for (let i of myName){
+    for (let i of myName){ // iterator return each values of array and string. like s,h,a,h,a,b etc including spaace
         console.log(i);
+    }
+}
+{
+    let findLetters = "Hello World"
+    for (let val of findLetters){ // iterator return each value of string. H, e, l, l, o, w, o, r, l, d. including space
+        console.log(val);
+    }
+}
+{
+    let fruits = ['apple', 'banana', 'cherry']; // iterator return each values of array and string like , apple, banana, cherry
+    for (let val of fruits){
+        console.log(val);
     }
 }
 
