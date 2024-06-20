@@ -446,36 +446,36 @@ switch (type) {
 // }
 
 // Q2. write a code which can give  grades to students according to their scores
-{
-    let scoreInMath = +prompt("Enter Maths Marks");
-    if (scoreInMath <0 || scoreInMath > 100) {
-        alert("Invalid marks enter between 0 ~ 100");
-    }
-    let scoreInPhysics = +prompt("Enter  Physics Marks");
-    if (scoreInPhysics <0 || scoreInPhysics > 100) {
-        alert("Invalid marks enter between 0 ~ 100");
-    }
-    let scoreInComputer = +prompt("Enter  Computer Marks");
-    if (scoreInComputer <0 || scoreInComputer > 100) {
-        alert("Invalid marks enter between 0 ~ 100");
-    }
-    const total = (scoreInComputer + scoreInMath + scoreInPhysics)
-    if (total <0 || total > 300) {
-        alert("Invalid marks");
-    }
-    let percentage = (total/300)*100
-    if (percentage >=80 && percentage <=100) {
-        console.log("Your Grade is A1");
-    }
-    if (percentage >=70 && percentage <80) {
-        console.log("Your Grade is A");
-    }
-    if (percentage >=60 && percentage <70) {
-        console.log("Your Grade is B");
-    }
-    if (percentage >=50 && percentage <60) {
-        console.log("Your Grade is C");
-    }else if (percentage < 50) {
-        console.log("You are Fail");
-    }
-}
+// {
+//     let scoreInMath = +prompt("Enter Maths Marks");
+//     if (scoreInMath <0 || scoreInMath > 100) {
+//         alert("Invalid marks enter between 0 ~ 100");
+//     }
+//     let scoreInPhysics = +prompt("Enter  Physics Marks");
+//     if (scoreInPhysics <0 || scoreInPhysics > 100) {
+//         alert("Invalid marks enter between 0 ~ 100");
+//     }
+//     let scoreInComputer = +prompt("Enter  Computer Marks");
+//     if (scoreInComputer <0 || scoreInComputer > 100) {
+//         alert("Invalid marks enter between 0 ~ 100");
+//     }
+//     const total = (scoreInComputer + scoreInMath + scoreInPhysics)
+//     if (total <0 || total > 300) {
+//         alert("Invalid marks");
+//     }
+//     let percentage = (total/300)*100
+//     if (percentage >=80 && percentage <=100) {
+//         console.log("Your Grade is A1");
+//     }
+//     if (percentage >=70 && percentage <80) {
+//         console.log("Your Grade is A");
+//     }
+//     if (percentage >=60 && percentage <70) {
+//         console.log("Your Grade is B");
+//     }
+//     if (percentage >=50 && percentage <60) {
+//         console.log("Your Grade is C");
+//     }else if (percentage < 50) {
+//         console.log("You are Fail");
+//     }
+// }
