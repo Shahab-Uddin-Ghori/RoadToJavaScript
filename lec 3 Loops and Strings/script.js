@@ -202,3 +202,14 @@ while (count < 6) {
     } while (i < 10);
   }
 }
+{
+//     Example 6: do...while Loop
+
+// A do...while loop ensures that the loop body is executed at least once.
+    let count = 0;
+do {
+    console.log("Count is: " + count);
+    count++;
+} while (count < 5);
+
+}
