@@ -36,3 +36,19 @@ console.log("sum of even numbers upto 20 is \t" + sum);
 //     }
 // }
 
+//Basic For Loop
+// A basic for loop iterates over a sequence of numbers, array elements, or string characters.
+// Example 1: Iterating Over an Array
+
+let fruits = ["apple", "mango", "banana"]
+for (i = 0; i<fruits.length; i++){
+    console.log(fruits[i]);
+}
+console.log(fruits);
+
+//Example 2: Iterating Over a String.
+let myName = "Shahab Uddin Ghori"
+for (i=0 ; i<myName.length ; i++){
+    console.log(myName[i]);
+}
+console.log(myName);
