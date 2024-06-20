@@ -161,21 +161,44 @@ while (count < 6) {
       console.log(`${count} is odd Number`);
     }
     count++;
+  }
 }
-}
+// {
+// Example 5: Simulating User Input
+//   console.log(
+//     "Simulating User Input. checking password is correct or not. have 3 attemps"
+//   );
+//   let password = "password123";
+//   let attempts = 0;
+//   let userInp;
+//   while (userInp !== password && attempts < 3) {
+//     userInp = prompt("Enter Your Password");
+//     attempts++;
+//   }
+//   if (userInp === password) {
+//     console.log("Access Granted");
+//   } else {
+//     console.log("Access denied. Too many attempts.");
+//   }
+// }
+
+// Do-while loop.
+// Do while loops check the condition after the block of code is executed. This control structure can be known as a post-test loop.
+// it will run code atleast one time then check condition.
 {
-    // Example 5: Simulating User Input
-    console.log("Simulating User Input. checking password is correct or not. have 3 attemps");
-    let password = "password123"
-    let attempts = 0
-    let userInp;
-    while (userInp !== password && attempts <3){
-        userInp = prompt("Enter Your Password")
-        attempts++
-    }
-    if (userInp === password){
-        console.log("Access Granted");
-    }else{
-        console.log("Access denied. Too many attempts.");
-    }
+    console.log("\ndo-while loop");
+  let i = 1;
+  console.log("\nat true condition at the end");
+  do {
+    console.log("we are learning do-while loop"); // condition true so work. 9 times
+    i++;
+  } while (i < 10);
+  {
+    let i = 10;
+    console.log("\nat false condition at the end");
+    do {
+      console.log("we are learning do-while loop"); // even condition is false it work one time
+      i++;
+    } while (i < 10);
+  }
 }
