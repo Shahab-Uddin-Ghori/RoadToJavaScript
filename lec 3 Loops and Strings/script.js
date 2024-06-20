@@ -64,3 +64,24 @@ for (i=0; i<colors.length; i++){
         break;
     }
 }
+
+// for of . loop
+// use for array and stirngs .
+console.log("\n\t\t\t\t\ For-of Loop.");
+console.log(" For-of Loop. on string");
+{
+    let myName = "Shahab Uddin Ghori"
+    for (let i of myName){
+        console.log(i);
+    }
+}
+
+{
+let colors = ["red", "green", "blue", "black", "orange", "white"]
+let array = 0
+for (let val of colors){ //iterator => characters 
+    console.log("\n" + val);
+    array++
+}
+console.log(array); // getting lenght of array
+}
