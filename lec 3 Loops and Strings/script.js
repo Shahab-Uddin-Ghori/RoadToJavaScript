@@ -317,3 +317,12 @@ const chngString2 = orgString1.toLowerCase();
 console.log(`chngString1 is ${chngString1}`);
 console.log(`chngString2 is ${chngString2}`);
 }
+
+// 3. string trim
+// trim method remove all whitespaces from start and end.
+const  whiteSpaces = "      learning Trim       "
+console.log(`without trim method:${whiteSpaces}`);
+const removeWhiteSpaces = whiteSpaces.trim()
+console.log(`with trim:${removeWhiteSpaces}`);
+
+
