@@ -419,7 +419,7 @@ The entire string is returned.
   console.log(str2);
   console.log(str2.replaceAll("hello", "hi"));// hi world, hi karachi
 }
-// charAt(index)
+// 6. charAt(index)
 // check a character at a specific index
 {
   console.log("\n\t\t\t charAt() Method");
@@ -428,4 +428,13 @@ The entire string is returned.
   console.log(str.charAt(1));// a
   console.log(str.charAt(2));// k
   console.log(str.charAt(7));// n
+}
+//7.  indexOf method 
+// check the index of specific character
+{
+  console.log("\n\t\t\t indexOf() Method");
+  let str = "pakistan"
+  console.log(str.indexOf("k"));//2
+  console.log(str.indexOf("p"));//0
+  console.log(str.indexOf("a"));//1 give the index of first character
 }
