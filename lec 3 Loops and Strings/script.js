@@ -228,3 +228,42 @@ do {
 // }while (userNum !== ranNum);
 // console.log("you won. correct number is " + ranNum);
 // }
+
+{
+  console.log("\n flip game using do while");
+  let flip;
+  do {
+      flip = Math.random() < 0.5 ? 'heads' : 'tails';
+      console.log("Flipped: " + flip);
+  } while (flip !== 'heads');
+  
+  console.log("Finally got heads!");
+  
+} 
+
+
+//////////////////////////////////////////// strings in detail //////////////////////////////////////
+// string is sequence of characters used to  represent text in js 
+// 1. create String 
+// let str = "this is string with double qoutes"
+// let str2 = ` this is string with single qoutes
+
+// string has in buit properties.
+// strings has inbulit functions called methods
+
+// 2. string lenght
+// str.length
+
+//3. string indicates  / index or indices
+// str[0], str[1], str[2] etc..
+
+///////// template literals //////////////
+// a way to have embedded expression in strings.
+console.log("\n\t\t Template Literals");
+let specialString = `template literals is a speacial type of string` // formed by backticks
+let secSent = 'this is sec variable'
+console.log(`printing ${specialString} without commas and + or double qoutes in single backticks ${secSent}`);
+// string interpolation
+//to create strings by doing subsitution of placeholders called string interpolation. means in single backtics we can write strings and variable/expression.
+let firstVar = "this is first variable"
+console.log(`${firstVar} and this is expression 1+2+3 = ${1+2+3}`);
