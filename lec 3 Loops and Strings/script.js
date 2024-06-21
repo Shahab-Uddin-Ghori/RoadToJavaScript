@@ -419,3 +419,13 @@ The entire string is returned.
   console.log(str2);
   console.log(str2.replaceAll("hello", "hi"));// hi world, hi karachi
 }
+// charAt(index)
+// check a character at a specific index
+{
+  console.log("\n\t\t\t charAt() Method");
+  let str = "pakistan"
+  console.log(str.charAt(0));// p
+  console.log(str.charAt(1));// a
+  console.log(str.charAt(2));// k
+  console.log(str.charAt(7));// n
+}
