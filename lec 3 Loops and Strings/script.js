@@ -243,7 +243,7 @@ do {
 
 
 //////////////////////////////////////////// strings in detail //////////////////////////////////////
-// string is sequence of characters used to  represent text in js 
+// string is sequence of characters used to  represent text in js. IMPT "In javascript strings are immutable(we do not have to change in orignal string) have to creatge new variable even for minor changing in string "
 // 1. create String 
 // let str = "this is string with double qoutes"
 // let str2 = ` this is string with single qoutes
@@ -281,3 +281,22 @@ console.log(`length of "\\t" is ${lengthOfEscapeCharacter1.length}`);
 console.log(`length of "\\n" is ${lengthOfEscapeCharacter2.length}`);
 /////////////////////////// template literals ended /////////////////////////
 
+///////////////////////// Strings Methods //////////////////////////////////
+// these are buit-in function to manipulate strings..
+console.log("\n\n\t\t String Methods");
+// 1. toUpperCase.
+{
+  console.log("\n toUpperCase");
+  let myString = "Learning toUpperCase"
+  console.log(myString);
+  myString = myString.toUpperCase() // not change orignal string until you reassin it..
+  console.log(myString);
+}
+{
+  // better way to do it bcz const cant reassign 
+  console.log("\n learning by new variable bcz method cant change in orignal value. but it can reassign if you use with let but cant with const so we se with better approach with creating a new variable\n\n");
+  const orgString = "by creating new variable";
+  console.log(orgString);
+  const upperCaseString = orgString.toLocaleUpperCase();
+  console.log(upperCaseString);
+}
