@@ -325,4 +325,49 @@ console.log(`without trim method:${whiteSpaces}`);
 const removeWhiteSpaces = whiteSpaces.trim()
 console.log(`with trim:${removeWhiteSpaces}`);
 
+//4. slice 
+// The slice() method in JavaScript is used to extract a portion of a string and return it as a new string, without modifying the original string. This method can also be used with arrays in a similar way. Here, we'll focus on its usage with strings.
+{
+  // string.slice(start, end)
+//   start: The zero-based index at which to begin extraction. If negative, it indicates an offset from the end of the string.
+// end (optional): The zero-based index before which to end extraction. The character at this index will not be included. If omitted(chor dena), extraction continues to the end of the string. If negative, it indicates an offset from the end of the string.
 
+}
+{
+  /* Key Points
+1. Zero-Based Index: The index starts from 0.
+2. Non-Inclusive End: The end index is non-inclusive(shamil). The character at the end index is not included in the returned substring.
+3. Negative Indices: Both start and end can be negative, indicating positions from the end of the string.*/
+}
+
+{
+  let str = "Hello, World!";
+  console.log(str.length); // 12 lenght or 13 index
+let part = str.slice(7, 12); // index start from 0
+console.log(part); // "World"
+/*start is 7: Extraction starts at index 7 ('W').
+end is 12: Extraction ends at index 12 (before 'd').
+The characters between index 7 and 11 ('World') are returned.*/
+}
+{
+  let str = "apple orange"
+  let strSlice = str.slice(6) // start from index 6, end is omitted(chor dena): Extraction continues to the end of the string.
+  console.log(strSlice);
+}
+{
+  let str = "Hello, World!";
+  let part = str.slice(-6, -1);
+  console.log(part); // "World"
+
+  // start is -6: Extraction starts 6 characters from the end ('W').
+  // end is -1: Extraction ends 1 character from the end (before '!').  
+}
+{
+  let str = "Slice method example";
+let part = str.slice(0);
+console.log(part); 
+/*start is 0: Extraction starts at the beginning.
+end is omitted: Extraction continues to the end of the string.
+The entire string is returned.
+*/
+}
