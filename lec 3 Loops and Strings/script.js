@@ -438,3 +438,12 @@ The entire string is returned.
   console.log(str.indexOf("p"));//0
   console.log(str.indexOf("a"));//1 give the index of first character
 }
+
+// Q. prompt the user their fullname. Generate a username based on the input, start with @, follwed by thier full name and ending with fullname lenght.
+{
+  // let fullname = prompt("Enter your fullname")
+  // let username = `@${fullname}`
+  // let lengthOfUserName = fullname.length
+  // username = username + lengthOfUserName
+  // console.log(username);
+} 
