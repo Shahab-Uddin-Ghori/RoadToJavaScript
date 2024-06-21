@@ -213,3 +213,18 @@ do {
 } while (count < 5);
 
 }
+
+// {
+//   Example 6: Random Number Guessing Game
+// A simple game where the user guesses a random number between 1 and 10
+// console.log("Guess the num game by ramdom number generator");
+// let ranNum = parseInt(Math.floor(Math.random()*11))
+// let userNum;
+// do {
+//   userNum = +prompt("Enter any numbre between 1 ~ 10")
+//   if (userNum > ranNum || userNum < ranNum){
+//     console.log("You Lose. Number is incorrect try again");
+//   } 
+// }while (userNum !== ranNum);
+// console.log("you won. correct number is " + ranNum);
+// }
