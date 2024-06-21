@@ -285,6 +285,7 @@ console.log(`length of "\\n" is ${lengthOfEscapeCharacter2.length}`);
 // these are buit-in function to manipulate strings..
 console.log("\n\n\t\t String Methods");
 // 1. toUpperCase.
+// convert all text into upper case
 {
   console.log("\n toUpperCase");
   let myString = "Learning toUpperCase"
@@ -299,4 +300,20 @@ console.log("\n\n\t\t String Methods");
   console.log(orgString);
   const upperCaseString = orgString.toLocaleUpperCase();
   console.log(upperCaseString);
+}
+
+// 2. toLowerCase.
+// convert all text into lower case
+{
+  console.log("\n toLowerCase");
+  const orgString1 = "Learning lower Case";
+  const orgString2 = "LEARNING LOWER CASE";
+console.log(`orgString1 is ${orgString1}`);
+console.log(`orgString2 is ${orgString2}`);
+console.log("applying toLowerCase");
+
+const chngString1 = orgString1.toLowerCase();
+const chngString2 = orgString1.toLowerCase();
+console.log(`chngString1 is ${chngString1}`);
+console.log(`chngString2 is ${chngString2}`);
 }
