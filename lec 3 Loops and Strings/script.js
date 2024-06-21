@@ -267,3 +267,17 @@ console.log(`printing ${specialString} without commas and + or double qoutes in 
 //to create strings by doing subsitution of placeholders called string interpolation. means in single backtics we can write strings and variable/expression.
 let firstVar = "this is first variable"
 console.log(`${firstVar} and this is expression 1+2+3 = ${1+2+3}`);
+
+/// escape characters
+// to escape line or Tabspaces. \n use to write a text in new line. \t use to get a tabSpace.
+// escape character length is always 1. \t => 1 lenght..  \n => 1 length..
+console.log("\n\t\t Escape characters");
+let escapeCharacterForNewLine = "line one \n line two \n line three"
+let escapeCharacterForTabSpace = "first word \t secong word \t third word"
+console.log(`${escapeCharacterForNewLine} "OR" ${escapeCharacterForTabSpace}`);
+let lengthOfEscapeCharacter1 = "\t";
+let lengthOfEscapeCharacter2 = "\n";
+console.log(`length of "\\t" is ${lengthOfEscapeCharacter1.length}`);
+console.log(`length of "\\n" is ${lengthOfEscapeCharacter2.length}`);
+/////////////////////////// template literals ended /////////////////////////
+
