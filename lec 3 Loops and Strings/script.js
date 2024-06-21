@@ -371,3 +371,51 @@ end is omitted: Extraction continues to the end of the string.
 The entire string is returned.
 */
 }
+
+// concenating of strings
+{
+  // by concat() method // not preferred
+  let str1 = "shahab "
+  let str2 = "uddin"
+  let combStr = str1.concat(str2)
+  console.log("by concat() method:  " + combStr);
+
+  // simple way by +
+  console.log("by + :  " + str1 + str2);
+}
+
+{
+  //practice of concanating
+  console.log("practice of concanating");
+  console.log("myname" + 123); //myname123
+  console.log("12" + 12); // 1212
+  // only concanate for + 
+  console.log("12" * 12); // will not concanate bcz con work with // + // output 144
+  console.log("10" - 5); // 5
+  console.log("name" * 5); // nan (not a number ) bcz in string alphabetic are not numbers .
+  console.log(("" * 2)); // empty string is consider as 0
+  console.log("hello" * 0);// Nan
+  console.log("hello1" * "hello2");// Nan. except numbers ans will be Nan for *,/,-
+  // in string alphabet and num both are string but if we do *,-,/ arithmetic operation except + for string numbers like "012345..." it will treat as a numbers and peform a.m operation except +.. but concanate for aphanumeric words like "hello " "hello123" etc with numbers ans will be NaN for *,/,- etc... 
+}
+
+// 5. Replace Method replace(search Value, new Value)
+// The replace() method searches a string for a value or a regular expression. The replace() method returns a new string with the value(s) replaced. The replace() method does not change the original string.
+{
+  console.log("\n\t\t\t learning replace method");
+  console.log("\n\treplace");
+  let str = "Learning replace"
+  console.log(str.replace("ning","ner")); // first paramenter which part of string you want to change. 2nd  what you want to change // learner replace
+  console.log(str); //learning replace
+  // if the string is same then replace change only first one
+  let str2 = "hello world hello karachi"
+  console.log(str2);
+  console.log(str2.replace("hello", "hi"));// hi world, hello karachi
+}
+{
+  //replace All
+  console.log("\n\treplaceAll"); // change all the target string
+  let str2 = "hello world hello karachi"
+  console.log(str2);
+  console.log(str2.replaceAll("hello", "hi"));// hi world, hi karachi
+}
