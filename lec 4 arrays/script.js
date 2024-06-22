@@ -58,9 +58,41 @@ console.log(cars[2][1]); // cars [2] == suzuki , cars[2][1] == u .. which is at 
     // as we see we can reassign orignal array unline stings which are immutibile (not changible)
     // we can say that "arrays are mutible(changible/reassignible"
 }
-
+    //looping over an array
+    // for loop // prefferable
 {
     console.log("\nlooping over an array  \n"); // print all element of array
+    console.log("by for loop");
+    let cars = ["honda", "toyota", "suzuki", "ferrari", "bmw"]
+    for (i=0 ; i<cars.length; i++){ //. iterator
+        console.log(cars[i]);
+        console.log(typeof (cars[i])); // return in form of string..
+    }
 
+}
+//for-of loop // // prefferable
+{
+    console.log("by for-of loop");
+    let cars = ["honda", "toyota", "suzuki", "ferrari", "bmw"]
+    for (let company of cars){
+        console.log(company);
+    }
+
+}
+{
+    console.log("by for-of loop");
+    let cities = ["karachi", "islamabad", "multan", "lahore", "murree", "hunza"]
+    for (let name of cities){
+        console.log(name);
+    }
+}
+
+// for-in loop // not prefferable in array. used for objects...
+{
+    console.log("by for-in loop");
+    let cars = ["honda", "toyota", "suzuki", "ferrari", "bmw"]
+    for (let company in cars){
+        console.log(cars[company]);
+    }
 
 }
