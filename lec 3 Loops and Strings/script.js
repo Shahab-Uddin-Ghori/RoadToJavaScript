@@ -397,6 +397,11 @@ The entire string is returned.
   console.log("hello" * 0);// Nan
   console.log("hello1" * "hello2");// Nan. except numbers ans will be Nan for *,/,-
   // in string alphabet and num both are string but if we do *,-,/ arithmetic operation except + for string numbers like "012345..." it will treat as a numbers and peform a.m operation except +.. but concanate for aphanumeric words like "hello " "hello123" etc with numbers ans will be NaN for *,/,- etc... 
+  let cars = ["honda", "toyota", "suzuki", "ferrari", "bmw"] //array
+  let res = ("cars: " + cars); // concanate of array with string
+  console.log(typeof res); // string.. if we concanate array with string it will be string
+  
+ 
 }
 
 // 5. Replace Method replace(search Value, new Value)
