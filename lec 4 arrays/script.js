@@ -133,41 +133,40 @@ console.log("\n\n\t\t\t Learning Array \n\n");
 }
 
 {
-    // practice qns 2
-    console.log(
-        "\n\n find the average marks of class [86,79,65,45,46,32,78,98,12,8,4,3,0,0]\n"
-    );
-    console.log("by for-of loop practice on array");
+  // practice qns 2
+  console.log(
+    "\n\n find the average marks of class [86,79,65,45,46,32,78,98,12,8,4,3,0,0]\n"
+  );
+  console.log("by for-of loop practice on array");
   // find the average marks of class [86,79,65,45,46,32,78,98,12,8,4,3,0,0]
   let marks = [86, 79, 65, 45, 46, 32, 78, 98, 12, 8, 4, 3, 0, 0];
   let sumOfmarks = 0;
-  for (value of marks){
-    sumOfmarks+=value
+  for (value of marks) {
+    sumOfmarks += value;
   }
   console.log("sum of marks is ", sumOfmarks);
   console.log("no of marks 'n' is ", marks.length);
-  let avgOfmarks = sumOfmarks/marks.length
+  let avgOfmarks = sumOfmarks / marks.length;
   console.log("average marks of class is ", avgOfmarks);
-
 }
 
 {
-    // practice q3
-    //Q. for a given array with price of 5 items [100, 200, 500, 1000, 245, 568, 984, 239]. All items have an offer of 10% off on them. change the array to store final price.
-    console.log("\nfor a given array with price of 5 items [100, 200, 500, 1000, 245, 568, 984, 239]. All items have an offer of 10% off on them. change the array to store final price.\n");
+  // practice q3
+  //Q. for a given array with price of 5 items [100, 200, 500, 1000, 245, 568, 984, 239]. All items have an offer of 10% off on them. change the array to store final price.
+  console.log(
+    "\nfor a given array with price of 5 items [100, 200, 500, 1000, 245, 568, 984, 239]. All items have an offer of 10% off on them. change the array to store final price.\n"
+  );
 
-    let originalPrice = [100, 200, 500, 1000, 245, 568, 984, 239, 100];
-    let discountedPrice = [];
-    
-    for (let i = 0; i < originalPrice.length; i++) {
-        discountedPrice.push(originalPrice[i] - originalPrice[i] / 10);
-        // console.log(discountedPrice[i]);
-    }
-    
-    console.log(originalPrice);
-    console.log(discountedPrice);
-    
+  let originalPrice = [100, 200, 500, 1000, 245, 568, 984, 239, 100];
+  let discountedPrice = [];
 
+  for (let i = 0; i < originalPrice.length; i++) {
+    discountedPrice.push(originalPrice[i] - originalPrice[i] / 10);
+    // console.log(discountedPrice[i]);
+  }
+
+  console.log(originalPrice);
+  console.log(discountedPrice);
 }
 // {
 
@@ -183,16 +182,34 @@ console.log("\n\n\t\t\t Learning Array \n\n");
 
 ////////////////////////// Array Methods. ////////////////////////
 console.log("\n\n\t\t\t Array Methods \n\n");
-// push method 
+// push method
 // push method add in array to end. it change in orignal array
 {
-    console.log("push() method");
-    let originalPrice = [100, 200, 500, 1000, 245, 568, 984, 239, 100];
-    originalPrice.push(50)
-    console.log(originalPrice);
-    let foods = ["apple", "banana", "orange",]
-    console.log(foods);
-    foods.push("mango", "coconut", "dragon Fruit", "watermallon") // can add multiple characters/words at a time.
-    console.log(foods);
+  console.log("\t\t example 1");
+  console.log("push() method");
+  let originalPrice = [100, 200, 500, 1000, 245, 568, 984, 239, 100];
+  originalPrice.push(50);
+  console.log(originalPrice);
+  console.log("\t\t example 2");
+  let foods = ["apple", "banana", "orange"];
+  console.log(foods);
+  foods.push("mango", "coconut", "dragon Fruit", "watermallon"); // can add multiple characters/words at a time.
+  console.log(foods);
 }
 
+{
+  // pop method
+  // pop method remove in array to end. it change in orignal array. but also can return delted value in new variable
+  console.log("pop() method");
+  console.log("\t\t example 1");
+  let foods = ["apple", "banana", "orange", "peach", "grapes"];
+  console.log(foods);
+  foods.pop();
+  console.log(foods);
+
+  console.log("\n\t\texample 2");
+  let foods2 = ["apple", "banana", "orange", "peach", "grapes", "mango"];
+  console.log(foods2);
+  let delteFruit = foods2.pop();
+  console.log("delete value is ", delteFruit);
+}
