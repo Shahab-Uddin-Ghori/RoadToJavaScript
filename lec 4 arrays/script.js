@@ -150,3 +150,33 @@ console.log("\n\n\t\t\t Learning Array \n\n");
   console.log("average marks of class is ", avgOfmarks);
 
 }
+
+{
+    // practice q3
+    //Q. for a given array with price of 5 items [100, 200, 500, 1000, 245, 568, 984, 239]. All items have an offer of 10% off on them. change the array to store final price.
+    console.log("\nfor a given array with price of 5 items [100, 200, 500, 1000, 245, 568, 984, 239]. All items have an offer of 10% off on them. change the array to store final price.\n");
+
+    let originalPrice = [100, 200, 500, 1000, 245, 568, 984, 239, 100];
+    let discountedPrice = [];
+    
+    for (let i = 0; i < originalPrice.length; i++) {
+        discountedPrice.push(originalPrice[i] - originalPrice[i] / 10);
+        // console.log(discountedPrice[i]);
+    }
+    
+    console.log(originalPrice);
+    console.log(discountedPrice);
+    
+
+}
+// {
+
+//     let originalPrice = [100,200,500,1000,245,568,984,239,100];
+//     for (let i = 0 ; i < originalPrice.length; i++){
+//         let discountedPrice = originalPrice[i]/10
+//         originalPrice[i] -= discountedPrice
+//         // console.log(discountedPrice.slice(discountedPrice[i].length - discountedPrice.length));
+
+//     }
+//     console.log(originalPrice);
+// }
