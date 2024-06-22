@@ -213,3 +213,19 @@ console.log("\n\n\t\t\t Array Methods \n\n");
   let delteFruit = foods2.pop();
   console.log("delete value is ", delteFruit);
 }
+
+// toString Method.
+// it convert array into string. it will not change  in orignal array you have to make new variable to make it change
+// it return new string
+{
+  console.log("\t\t example 1");
+    let arr = [1, 5 , 6]
+    let newArr = arr.toString()
+    console.log(arr);
+    console.log(newArr);
+  console.log("\n\t\texample 2");
+  let arr2 = ["ali", "usman", "khan"]
+  let newArr2 = arr2.toString()
+  console.log(arr2);
+  console.log(newArr2);
+}
