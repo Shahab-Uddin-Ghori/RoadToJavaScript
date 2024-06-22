@@ -257,6 +257,9 @@ do {
 //3. string indicates  / index or indices
 // str[0], str[1], str[2] etc..
 
+
+/////////////// Imt if we use , number and number both have thier datatypes as number and string..but if we concate with + it/number will become string also.
+
 ///////// template literals //////////////
 // a way to have embedded expression in strings.
 console.log("\n\t\t Template Literals");
