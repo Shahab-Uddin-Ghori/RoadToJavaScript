@@ -180,3 +180,19 @@ console.log("\n\n\t\t\t Learning Array \n\n");
 //     }
 //     console.log(originalPrice);
 // }
+
+////////////////////////// Array Methods. ////////////////////////
+console.log("\n\n\t\t\t Array Methods \n\n");
+// push method 
+// push method add in array to end. it change in orignal array
+{
+    console.log("push() method");
+    let originalPrice = [100, 200, 500, 1000, 245, 568, 984, 239, 100];
+    originalPrice.push(50)
+    console.log(originalPrice);
+    let foods = ["apple", "banana", "orange",]
+    console.log(foods);
+    foods.push("mango", "coconut", "dragon Fruit", "watermallon") // can add multiple characters/words at a time.
+    console.log(foods);
+}
+
