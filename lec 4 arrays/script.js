@@ -229,3 +229,22 @@ console.log("\n\n\t\t\t Array Methods \n\n");
   console.log(arr2);
   console.log(newArr2);
 }
+{
+    // cocat() method
+    // cocat is used to join mulltiple array like string. it will not change in orignal array but return new array.
+    // join multiple array and return result.
+  console.log("\t\t example 1");
+    console.log("\n\n\t\t\t cocat() method");
+    let marvel = ["captain", "hawkeye", "hulk", "natasha", "rocket"]
+    let dc = ["superman", "batman", "flash", "wonder Woman"]
+    let joinMarvelAndDc = marvel.concat(dc)
+    console.log(joinMarvelAndDc);
+    console.log(dc);
+    console.log(marvel);
+
+  console.log("\n\t\texample 2");
+ let arr = []
+ let arr2 = []
+ let arr3 = arr.concat(arr2)
+ console.log(arr3);
+}
