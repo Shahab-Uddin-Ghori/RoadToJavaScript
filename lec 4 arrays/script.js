@@ -96,3 +96,23 @@ console.log(cars[2][1]); // cars [2] == suzuki , cars[2][1] == u .. which is at 
     }
 
 }
+
+{
+    // practice Qns .
+    //Q. uppercase ecach word of array by for loop and for-of loop
+    console.log("by for loop practice on array");
+    let cars = ["honda", "toyota", "suzuki", "ferrari", "bmw"]
+    for (let i = 0; i<cars.length; i++){
+        console.log(cars[i].toUpperCase());
+    }
+
+}
+{
+    //Q. uppercase ecach word of array by for loop and for-of loop
+    console.log("by for-of loop practice on array");
+    let cars = ["honda", "toyota", "suzuki", "ferrari", "bmw"]
+    for (let name of cars){
+        console.log(name.toUpperCase());
+    }
+
+}
