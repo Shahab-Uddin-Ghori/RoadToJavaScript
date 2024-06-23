@@ -193,8 +193,9 @@ console.log("\n\n\t\t\t Array Methods \n\n");
   console.log("\t\t example 2");
   let foods = ["apple", "banana", "orange"];
   console.log(foods);
-  foods.push("mango", "coconut", "dragon Fruit", "watermallon"); // can add multiple characters/words at a time.
+  let addedPush = foods.push("mango", "coconut", "dragon Fruit", "watermallon"); // can add multiple characters/words at a time.
   console.log(foods);
+  console.log(addedPush); // it will return lenght of array
 }
 
 {
@@ -266,4 +267,19 @@ console.log("\n\n\t\t\t Array Methods \n\n");
   console.log("after shift deleted value is ", deletedValue);
   console.log("after shift array  is ", dc);
 
+}
+
+// unshift method
+// unshift method add in array to start. it change in orignal array
+console.log("\n\t\t\tunshift() method");
+{
+  console.log("\t\t example 1");
+  let marvel = ["captain", "hawkeye", "hulk", "natasha", "rocket"]
+  console.log(marvel);
+  marvel.unshift("dr strange","vision") // can add multiple like push. but in start
+  console.log(marvel);
+  console.log("\t\t example 2");
+  let dc = ["superman", "batman", "flash", "wonder Woman"]
+  let addedarray = dc.unshift("cyborg", "supergitrl" ,"robin")
+  console.log(addedarray); // unshift do not return added value but it will return  lenght of array 
 }
