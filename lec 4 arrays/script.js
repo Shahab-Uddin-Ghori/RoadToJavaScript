@@ -353,3 +353,20 @@ arr3.splice()
 console.log(arr3);
 
 }
+
+// practice qns.
+//  create an array to store companies Bloomberg, microsoft, uber, google, IBM, netflix
+//1. remove the first company from array
+//2. remove uber and add ola from its place
+//3. add amazon at the end.
+
+{
+  console.log("\n\n\t\t\t Practice Qns \n\n");
+  let companies = ["Bloomberg", "microsoft", "uber", "google", "IBM", "netflix"]
+  console.log(companies);
+  companies.shift()// remove first element 
+  companies.splice("1","1","Ola") //remove uber and add ola from its place
+  companies.push("amazon") // add amazon at end
+  console.log(companies);
+
+}
