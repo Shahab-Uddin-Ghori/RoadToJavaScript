@@ -398,3 +398,13 @@ console.log(arr3);
   let heroes = [...dc , ...marvel] // concate dc and marvel array
   console.log(heroes);
 } 
+
+// falt
+//falt() is buit in function the resove nested array into new single array.
+{
+  console.log("\n\n\t\t falt on array");
+  let nestedArray = [12, 34, 5, [32,56,76], 125, 42, [0,65,22]]
+  let singleArray = nestedArray.flat(Infinity) // it will convert nested array into single array.. you can provide depth i.e flat(1) goto nested, falt(2) goto nested over nested array and so on. or simply typinfinity it will handle by js.. flat(infinity)
+  console.log(nestedArray);
+  console.log(singleArray);
+}
