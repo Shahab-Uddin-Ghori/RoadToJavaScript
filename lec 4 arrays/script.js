@@ -408,3 +408,17 @@ console.log(arr3);
   console.log(nestedArray);
   console.log(singleArray);
 }
+
+// split()
+// it will convert string into array.
+{
+  console.log("\n\n\t\tsplit() ");
+let sentence = "this is a sentence"
+console.log(sentence, typeof sentence);
+  let stringIntoArray = sentence.split(" "); // convet into string... with space " " take words.. splits words .. in will not include space
+  console.log(stringIntoArray);
+
+  let sentence2 = "this is second sentence"
+  let stringIntoArray2 = sentence2.split("") // without space split each letter and space also. it include space
+  console.log(stringIntoArray2);
+}
