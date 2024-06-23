@@ -243,8 +243,27 @@ console.log("\n\n\t\t\t Array Methods \n\n");
     console.log(marvel);
 
   console.log("\n\t\texample 2");
- let arr = []
- let arr2 = []
- let arr3 = arr.concat(arr2)
- console.log(arr3);
+ let arr = ["water", "softdrink",]
+ let arr2 = ["juice", "honey"]
+ let arr3 = ["milk","serup"]
+ let arr4 = arr.concat(arr2,arr3)
+ console.log(arr4);
+}
+
+// shift method
+  // shift method remove in array to start. it change in orignal array. but also can return delted value in new variable
+  console.log("\n\t\t\tshift() method");
+  {
+  console.log("\t\t example 1");
+  let marvel = ["captain", "hawkeye", "hulk", "natasha", "rocket"]
+  console.log(marvel);
+    marvel.shift()
+  console.log(marvel);
+  console.log("\t\t example 2");
+  let dc = ["superman", "batman", "flash", "wonder Woman"]
+  console.log(dc);
+  let deletedValue = dc.shift()
+  console.log("after shift deleted value is ", deletedValue);
+  console.log("after shift array  is ", dc);
+
 }
