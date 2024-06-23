@@ -389,3 +389,12 @@ console.log(arr3);
   console.log(newArr); // type string
   console.log(typeof newArr); //type string
 }
+
+// spread operator for array..
+{
+  console.log("\n\n\t\t spread operator on array");
+  let dc = ["superman", "batman", "flash", "wonder Woman"]
+  let marvel = ["captain", "hawkeye", "hulk", "natasha", "rocket"]
+  let heroes = [...dc , ...marvel] // concate dc and marvel array
+  console.log(heroes);
+} 
