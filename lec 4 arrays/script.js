@@ -300,3 +300,56 @@ console.log("\n\t\t\tslice() method");
   console.log(dc);
 
 }
+
+// splice() method
+// JavaScript Array splice() Method is an inbuilt method in JavaScript that is used to change the contents of an array by removing or replacing existing elements and/or adding new elements. It modifies the original array and returns an array of the removed elements.
+// splice(startIndex, deleteCount, newAdd) // splice(add, remove, replace)
+// also can return remove element in new variable
+
+console.log("\n\t\t\tslice() method");
+{
+  console.log("\t\t example 1");
+  let dc = ["superman", "batman", "flash", "wonder Woman"]
+  console.log(dc);
+  dc.splice("1","2","black","shzm") // change in origanl array.. start from index 1.... delete 2 index(batman,flash)... added newElement(black,shzm)  
+  console.log(dc);
+
+  console.log("\t\t example 2");
+  let marvel = ["captain", "hawkeye", "hulk", "natasha", "rocket"]
+  console.log(marvel);
+  let removeElement = marvel.splice(2,1, "banner","tony") // start form index 2.. delete 1 element... new added element "banner,tony"
+  console.log(removeElement); // return remove variable .. hulk
+  console.log(marvel);
+
+  // only adding element without delete any index
+  let foods2 = ["apple", "banana", "orange", "peach", "mango"];
+  console.log("\t\t example 3");
+  console.log("adding only without delete on specific index");
+  console.log(foods2);
+  foods2.splice("2","0","grapes") // add grapes on index 2 // delete element 0
+  console.log(foods2); //'apple', 'banana', 'grapes', 'orange', 'peach', 'mango'
+
+  console.log("\t\t example 4");
+  console.log(" only removing element on specific index without adding any element");
+  let arr = [1, 5, 10, 50, 40 ,30, 90, 70]
+  console.log(arr);
+  arr.splice("2","3")// delete 3 elelment from index 2 and add nothing
+  console.log(arr); // 1,5,30,90,70
+
+  // splice act like slice if we not provide both delete count and addelement
+  console.log("\t\t example 5");
+console.log("splice act like slice");
+let arr2 = ["alikhan", "usman ghazi", "ertugul", "orhan"]
+console.log(arr2);
+let actSlice = arr2.splice(1)
+console.log(actSlice);//usman ghazi", "ertugul", "orhan" // splice act like slice
+console.log(arr2); // change orignal array remain with only // alikhan 
+
+// if no index provided nothing will change in array
+console.log("\t\t example 6");
+let arr3 = ["water" , "drink", "honey", "milk"]
+console.log(arr3);
+arr3.splice()
+console.log(arr3);
+
+}
