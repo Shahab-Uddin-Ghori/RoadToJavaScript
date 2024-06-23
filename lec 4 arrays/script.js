@@ -283,3 +283,20 @@ console.log("\n\t\t\tunshift() method");
   let addedarray = dc.unshift("cyborg", "supergitrl" ,"robin")
   console.log(addedarray); // unshift do not return added value but it will return  lenght of array 
 }
+
+// slice in array
+//same as string. can chk on lec 3/
+// dont change in orignal array and reutrn a specific part / slice of array in new variable.
+// slice(startIndex,endIndex) endIndex is not inclusive(character/value of this index will not include)
+console.log("\n\t\t\tslice() method");
+{
+  console.log("\t\t example 1");
+  let dc = ["superman", "batman", "flash", "wonder Woman"]
+  console.log(dc);
+  let sliceValue = dc.slice("0","2")
+  console.log(sliceValue);
+  console.log(dc.slice(2,3)); // flash 
+  console.log(dc.slice(2,4)); // flash ,wonder woman
+  console.log(dc);
+
+}
