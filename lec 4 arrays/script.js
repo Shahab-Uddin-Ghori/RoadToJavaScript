@@ -220,53 +220,52 @@ console.log("\n\n\t\t\t Array Methods \n\n");
 // it return new string
 {
   console.log("\t\t example 1");
-    let arr = [1, 5 , 6]
-    let newArr = arr.toString()
-    console.log(arr);
-    console.log(newArr);
+  let arr = [1, 5, 6];
+  let newArr = arr.toString();
+  console.log(arr);
+  console.log(newArr);
   console.log("\n\t\texample 2");
-  let arr2 = ["ali", "usman", "khan"]
-  let newArr2 = arr2.toString()
+  let arr2 = ["ali", "usman", "khan"];
+  let newArr2 = arr2.toString();
   console.log(arr2);
   console.log(newArr2);
 }
 {
-    // cocat() method
-    // cocat is used to join mulltiple array like string. it will not change in orignal array but return new array.
-    // join multiple array and return result.
+  // cocat() method
+  // cocat is used to join mulltiple array like string. it will not change in orignal array but return new array.
+  // join multiple array and return result.
   console.log("\t\t example 1");
-    console.log("\n\n\t\t\t cocat() method");
-    let marvel = ["captain", "hawkeye", "hulk", "natasha", "rocket"]
-    let dc = ["superman", "batman", "flash", "wonder Woman"]
-    let joinMarvelAndDc = marvel.concat(dc)
-    console.log(joinMarvelAndDc);
-    console.log(dc);
-    console.log(marvel);
+  console.log("\n\n\t\t\t cocat() method");
+  let marvel = ["captain", "hawkeye", "hulk", "natasha", "rocket"];
+  let dc = ["superman", "batman", "flash", "wonder Woman"];
+  let joinMarvelAndDc = marvel.concat(dc);
+  console.log(joinMarvelAndDc);
+  console.log(dc);
+  console.log(marvel);
 
   console.log("\n\t\texample 2");
- let arr = ["water", "softdrink",]
- let arr2 = ["juice", "honey"]
- let arr3 = ["milk","serup"]
- let arr4 = arr.concat(arr2,arr3)
- console.log(arr4);
+  let arr = ["water", "softdrink"];
+  let arr2 = ["juice", "honey"];
+  let arr3 = ["milk", "serup"];
+  let arr4 = arr.concat(arr2, arr3);
+  console.log(arr4);
 }
 
 // shift method
-  // shift method remove in array to start. it change in orignal array. but also can return delted value in new variable
-  console.log("\n\t\t\tshift() method");
-  {
+// shift method remove in array to start. it change in orignal array. but also can return delted value in new variable
+console.log("\n\t\t\tshift() method");
+{
   console.log("\t\t example 1");
-  let marvel = ["captain", "hawkeye", "hulk", "natasha", "rocket"]
+  let marvel = ["captain", "hawkeye", "hulk", "natasha", "rocket"];
   console.log(marvel);
-    marvel.shift()
+  marvel.shift();
   console.log(marvel);
   console.log("\t\t example 2");
-  let dc = ["superman", "batman", "flash", "wonder Woman"]
+  let dc = ["superman", "batman", "flash", "wonder Woman"];
   console.log(dc);
-  let deletedValue = dc.shift()
+  let deletedValue = dc.shift();
   console.log("after shift deleted value is ", deletedValue);
   console.log("after shift array  is ", dc);
-
 }
 
 // unshift method
@@ -274,14 +273,14 @@ console.log("\n\n\t\t\t Array Methods \n\n");
 console.log("\n\t\t\tunshift() method");
 {
   console.log("\t\t example 1");
-  let marvel = ["captain", "hawkeye", "hulk", "natasha", "rocket"]
+  let marvel = ["captain", "hawkeye", "hulk", "natasha", "rocket"];
   console.log(marvel);
-  marvel.unshift("dr strange","vision") // can add multiple like push. but in start
+  marvel.unshift("dr strange", "vision"); // can add multiple like push. but in start
   console.log(marvel);
   console.log("\t\t example 2");
-  let dc = ["superman", "batman", "flash", "wonder Woman"]
-  let addedarray = dc.unshift("cyborg", "supergitrl" ,"robin")
-  console.log(addedarray); // unshift do not return added value but it will return  lenght of array 
+  let dc = ["superman", "batman", "flash", "wonder Woman"];
+  let addedarray = dc.unshift("cyborg", "supergitrl", "robin");
+  console.log(addedarray); // unshift do not return added value but it will return  lenght of array
 }
 
 // slice in array
@@ -291,14 +290,13 @@ console.log("\n\t\t\tunshift() method");
 console.log("\n\t\t\tslice() method");
 {
   console.log("\t\t example 1");
-  let dc = ["superman", "batman", "flash", "wonder Woman"]
+  let dc = ["superman", "batman", "flash", "wonder Woman"];
   console.log(dc);
-  let sliceValue = dc.slice("0","2")
+  let sliceValue = dc.slice("0", "2");
   console.log(sliceValue);
-  console.log(dc.slice(2,3)); // flash 
-  console.log(dc.slice(2,4)); // flash ,wonder woman
+  console.log(dc.slice(2, 3)); // flash
+  console.log(dc.slice(2, 4)); // flash ,wonder woman
   console.log(dc);
-
 }
 
 // splice() method
@@ -309,15 +307,15 @@ console.log("\n\t\t\tslice() method");
 console.log("\n\t\t\tslice() method");
 {
   console.log("\t\t example 1");
-  let dc = ["superman", "batman", "flash", "wonder Woman"]
+  let dc = ["superman", "batman", "flash", "wonder Woman"];
   console.log(dc);
-  dc.splice("1","2","black","shzm") // change in origanl array.. start from index 1.... delete 2 index(batman,flash)... added newElement(black,shzm)  
+  dc.splice("1", "2", "black", "shzm"); // change in origanl array.. start from index 1.... delete 2 index(batman,flash)... added newElement(black,shzm)
   console.log(dc);
 
   console.log("\t\t example 2");
-  let marvel = ["captain", "hawkeye", "hulk", "natasha", "rocket"]
+  let marvel = ["captain", "hawkeye", "hulk", "natasha", "rocket"];
   console.log(marvel);
-  let removeElement = marvel.splice(2,1, "banner","tony") // start form index 2.. delete 1 element... new added element "banner,tony"
+  let removeElement = marvel.splice(2, 1, "banner", "tony"); // start form index 2.. delete 1 element... new added element "banner,tony"
   console.log(removeElement); // return remove variable .. hulk
   console.log(marvel);
 
@@ -326,32 +324,33 @@ console.log("\n\t\t\tslice() method");
   console.log("\t\t example 3");
   console.log("adding only without delete on specific index");
   console.log(foods2);
-  foods2.splice("2","0","grapes") // add grapes on index 2 // delete element 0
+  foods2.splice("2", "0", "grapes"); // add grapes on index 2 // delete element 0
   console.log(foods2); //'apple', 'banana', 'grapes', 'orange', 'peach', 'mango'
 
   console.log("\t\t example 4");
-  console.log(" only removing element on specific index without adding any element");
-  let arr = [1, 5, 10, 50, 40 ,30, 90, 70]
+  console.log(
+    " only removing element on specific index without adding any element"
+  );
+  let arr = [1, 5, 10, 50, 40, 30, 90, 70];
   console.log(arr);
-  arr.splice("2","3")// delete 3 elelment from index 2 and add nothing
+  arr.splice("2", "3"); // delete 3 elelment from index 2 and add nothing
   console.log(arr); // 1,5,30,90,70
 
   // splice act like slice if we not provide both delete count and addelement
   console.log("\t\t example 5");
-console.log("splice act like slice");
-let arr2 = ["alikhan", "usman ghazi", "ertugul", "orhan"]
-console.log(arr2);
-let actSlice = arr2.splice(1)
-console.log(actSlice);//usman ghazi", "ertugul", "orhan" // splice act like slice
-console.log(arr2); // change orignal array remain with only // alikhan 
+  console.log("splice act like slice");
+  let arr2 = ["alikhan", "usman ghazi", "ertugul", "orhan"];
+  console.log(arr2);
+  let actSlice = arr2.splice(1);
+  console.log(actSlice); //usman ghazi", "ertugul", "orhan" // splice act like slice
+  console.log(arr2); // change orignal array remain with only // alikhan
 
-// if no index provided nothing will change in array
-console.log("\t\t example 6");
-let arr3 = ["water" , "drink", "honey", "milk"]
-console.log(arr3);
-arr3.splice()
-console.log(arr3);
-
+  // if no index provided nothing will change in array
+  console.log("\t\t example 6");
+  let arr3 = ["water", "drink", "honey", "milk"];
+  console.log(arr3);
+  arr3.splice();
+  console.log(arr3);
 }
 
 // practice qns.
@@ -362,30 +361,36 @@ console.log(arr3);
 
 {
   console.log("\n\n\t\t\t Practice Qns \n\n");
-  let companies = ["Bloomberg", "microsoft", "uber", "google", "IBM", "netflix"]
+  let companies = [
+    "Bloomberg",
+    "microsoft",
+    "uber",
+    "google",
+    "IBM",
+    "netflix",
+  ];
   console.log(companies);
-  companies.shift()// remove first element 
-  companies.splice("1","1","Ola") //remove uber and add ola from its place
-  companies.push("amazon") // add amazon at end
+  companies.shift(); // remove first element
+  companies.splice("1", "1", "Ola"); //remove uber and add ola from its place
+  companies.push("amazon"); // add amazon at end
   console.log(companies);
-
 }
 
 {
-  // more methods on array 
+  // more methods on array
   console.log("\n\n\t\t More Method on array");
-  let arr = [1,2,4,7,8];
+  let arr = [1, 2, 4, 7, 8];
   console.log(arr);
   // inlcudes
-  console.log(arr.includes(9));// return in boolean true/false.. means specific element ispresent/notpresent in an array // false 
+  console.log(arr.includes(9)); // return in boolean true/false.. means specific element ispresent/notpresent in an array // false
   // indexOf
   console.log(arr.indexOf(2)); // 2 element is at index 1. // 1
-  console.log(arr.indexOf(5));// -1 if the specific element is not present in array indexOf return -1. 
-  // join 
-  let arr2 = [1,2,3,6]
+  console.log(arr.indexOf(5)); // -1 if the specific element is not present in array indexOf return -1.
+  // join
+  let arr2 = [1, 2, 3, 6];
   console.log(arr2); // type object
   console.log(typeof arr2);
-  let newArr = arr2.join() // convert array into string with same value
+  let newArr = arr2.join(); // convert array into string with same value
   console.log(newArr); // type string
   console.log(typeof newArr); //type string
 }
@@ -393,18 +398,18 @@ console.log(arr3);
 // spread operator for array..
 {
   console.log("\n\n\t\t spread operator on array");
-  let dc = ["superman", "batman", "flash", "wonder Woman"]
-  let marvel = ["captain", "hawkeye", "hulk", "natasha", "rocket"]
-  let heroes = [...dc , ...marvel] // concate dc and marvel array
+  let dc = ["superman", "batman", "flash", "wonder Woman"];
+  let marvel = ["captain", "hawkeye", "hulk", "natasha", "rocket"];
+  let heroes = [...dc, ...marvel]; // concate dc and marvel array
   console.log(heroes);
-} 
+}
 
 // falt
 //falt() is buit in function the resove nested array into new single array.
 {
   console.log("\n\n\t\t falt on array");
-  let nestedArray = [12, 34, 5, [32,56,76], 125, 42, [0,65,22]]
-  let singleArray = nestedArray.flat(Infinity) // it will convert nested array into single array.. you can provide depth i.e flat(1) goto nested, falt(2) goto nested over nested array and so on. or simply typinfinity it will handle by js.. flat(infinity)
+  let nestedArray = [12, 34, 5, [32, 56, 76], 125, 42, [0, 65, 22]];
+  let singleArray = nestedArray.flat(Infinity); // it will convert nested array into single array.. you can provide depth i.e flat(1) goto nested, falt(2) goto nested over nested array and so on. or simply typinfinity it will handle by js.. flat(infinity)
   console.log(nestedArray);
   console.log(singleArray);
 }
@@ -413,12 +418,29 @@ console.log(arr3);
 // it will convert string into array.
 {
   console.log("\n\n\t\tsplit() ");
-let sentence = "this is a sentence"
-console.log(sentence, typeof sentence);
+  let sentence = "this is a sentence";
+  console.log(sentence, typeof sentence);
   let stringIntoArray = sentence.split(" "); // convet into string... with space " " take words.. splits words .. in will not include space
   console.log(stringIntoArray);
 
-  let sentence2 = "this is second sentence"
-  let stringIntoArray2 = sentence2.split("") // without space split each letter and space also. it include space
+  let sentence2 = "this is second sentence";
+  let stringIntoArray2 = sentence2.split(""); // without space split each letter and space also. it include space
   console.log(stringIntoArray2);
+}
+
+// Array.from and Array.of
+// convert array, obj into stings
+{
+  console.log("\n\n\t\tArray.from and Array.of");
+  console.log(Array.from("shahab")); // convert string into array. // convert each letter into array
+
+  let score1 = 45;
+  let score2 = 75;
+  let score3 = 15;
+  let className = "seven";
+  let className2 = "seven";
+  console.log(Array.of(score1, score2, score3)); // convert variable of values into array
+  console.log(Array.of(className,className2)); // convert variable of values into array
+  console.log(Array.of(score1, score2, score3,className,className2)); // convert variable of values into array
+
 }
