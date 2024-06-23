@@ -370,3 +370,22 @@ console.log(arr3);
   console.log(companies);
 
 }
+
+{
+  // more methods on array 
+  console.log("\n\n\t\t More Method on array");
+  let arr = [1,2,4,7,8];
+  console.log(arr);
+  // inlcudes
+  console.log(arr.includes(9));// return in boolean true/false.. means specific element ispresent/notpresent in an array // false 
+  // indexOf
+  console.log(arr.indexOf(2)); // 2 element is at index 1. // 1
+  console.log(arr.indexOf(5));// -1 if the specific element is not present in array indexOf return -1. 
+  // join 
+  let arr2 = [1,2,3,6]
+  console.log(arr2); // type object
+  console.log(typeof arr2);
+  let newArr = arr2.join() // convert array into string with same value
+  console.log(newArr); // type string
+  console.log(typeof newArr); //type string
+}
