@@ -85,31 +85,32 @@ myFunction6(3); // first parameter is use second is deafult parameter assignent 
 
 {
   console.log("\n\n\t\t rest parameter in function");
-  function sum(...restArrg) {//rest parameter
+  function sum(...restArrg) {
+    //rest parameter
     let total = 0;
     for (let value of restArrg) {
       total += value;
     }
     return total;
   }
-  console.log(sum(1,2,5));// 8
-  console.log(sum(10,12,15));// 37
-  console.log(sum(11,12,15,15,50,100,-11,-12,-15,-15));// 150
-
+  console.log(sum(1, 2, 5)); // 8
+  console.log(sum(10, 12, 15)); // 37
+  console.log(sum(11, 12, 15, 15, 50, 100, -11, -12, -15, -15)); // 150
 }
 
 {
   console.log("\n\t\t example 2");
-  function mul(...restArrg){//rest parameter
-    let mul = 1
-    for (let value of restArrg){
-      mul *= value
+  function mul(...restArrg) {
+    //rest parameter
+    let mul = 1;
+    for (let value of restArrg) {
+      mul *= value;
     }
-    return mul
+    return mul;
   }
-  console.log(mul(2,3));// 6
-  console.log(mul(2,3));// 6
-  console.log(mul(1,2,3,4,5));// 120
+  console.log(mul(2, 3)); // 6
+  console.log(mul(2, 3)); // 6
+  console.log(mul(1, 2, 3, 4, 5)); // 120
 }
 
 {
@@ -121,21 +122,173 @@ myFunction6(3); // first parameter is use second is deafult parameter assignent 
     }
     return arr;
   }
-  
+
   let arrCountForSum = arrgment();
   console.log(arrCountForSum);
-  
-  function sum(...arrg) { // rest parameter
+
+  function sum(...arrg) {
+    // rest parameter
     let total = 0;
     for (let value of arrg) {
       total += value;
     }
     return total;
   }
-  
+
   console.log(sum(...arrCountForSum));
 }
 
+// arrow function
+// Arrow function {()=>} is concise way of writing JavaScript functions in shorter way. Arrow functions were introduced in the ES6 version. They make our code more structured and readable.
+// we can save arrow function in a variable
 
+// const funcationName (para1,para2,....) => { your code}
+// (para1,para2,...) => {your code.}
+{
+  console.log("\n\n\t\t arrow function");
+  let sum = (a, b) => {
+    add = a + b;
+    return add;
+  };
+  console.log(sum(1, 2)); //3
+}
 
+{
+  console.log("\n\t example 2");
+  let add = (x, y) => {
+    let sum = x + y;
+    console.log(sum);
+  };
+  add(1, 2);
+}
 
+{
+  console.log("\n\t\texample 3");
+  console.log(
+    "\n\nQ. Using arrow function. make a product of multiple argument using rest operator also save argument as array in new varaiable"
+  );
+  let mul = (...restArrg) => {
+    let prod = 1;
+    let arrayOfResARRG = [];
+    for (let value of restArrg) {
+      prod *= value;
+      arrayOfResARRG.push(value);
+    }
+    console.log(arrayOfResARRG);
+    console.log(prod);
+  };
+  mul(1, 2, 3); //6
+  mul(1, 2, 3, 4, 5); //120
+  mul(1, 2, 3, 4, 5, 6, 7, 8, 9, 10); //3628800
+}
+{
+  console.log("\n\t\texample 4");
+  console.log(
+    "\n\nQ. Using arrow function. make a sum of multiple argument using rest operator\n.\n 1. save argument as array in new varaiable\n2. take argument dynamically by loop which call by function"
+  );
+  // function for arguments
+  let argument = () => {
+    let arrg = [];
+    for (let i = 1; i < 11; i++) {
+      arrg.push(i);
+    }
+    return arrg; // return array a/c to provided condition..
+  };
+  let restArgument = argument(); // saving return value in variable // compulsary
+  console.log(restArgument); // array
+
+  // making function for sum of argument
+
+  let sum = (...resArrg) => {
+    // rest operator take value from funtion provided before
+    let sumOfArrg = 0;
+    for (let value of resArrg) {
+      // for-of loop
+      sumOfArrg += value; // doing sum of each value coming from argument
+    }
+    console.log(sumOfArrg);
+  };
+  sum(...restArgument);
+}
+
+{
+  console.log("\n\t\texample 5");
+  console.log("same work in example but with different apporach easy apporach");
+  let arrayOfArrg = [];
+  for (let i = 1; i < 11; i++) {
+    arrayOfArrg.push(i);
+  }
+  console.log(arrayOfArrg);
+
+  let sum = (...arrg) => {
+    let total = 0;
+    for (let value of arrg) {
+      total += value;
+    }
+    console.log(total);
+  };
+  sum(...arrayOfArrg);
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+{
+  console.log("\n\t\texample 6");
+  console.log(
+    "Q.Make a program that take multiple input from user by asking.\n 1. saves these as array in variable and\n 2. sum of these argument by funtion name sum"
+  );
+  //isNaN()
+  // The isNaN() function checks whether a value is NaN (Not-a-Number). It returns true if the value is NaN, and false otherwise. However, isNaN() has some peculiar behavior because it tries to convert the value to a number first.
+  //trim()
+  // The trim() method is used to remove whitespace from both ends of a string. Whitespace in this context includes spaces, tabs, and newline characters.
+
+  /////////////////   asking no of input ///////////////////////////////////////
+  let noOfArrgByUser = prompt("How many number of values do you want to sum.");
+
+  while (isNaN(noOfArrgByUser) || noOfArrgByUser.trim() === "") {
+    alert("Please enter numeric values");
+    noOfArrgByUser = prompt("How many number of values do you want to sum.");
+  }
+
+  noOfArrgByUser = +noOfArrgByUser; // convert into number
+  ///////////////////////// end ///////////////////////////////////////////////
+
+  ////////////// function for getting dynamically array by user.. only numeric value ///////////////
+  let userValues = () => {
+    let arrg = [];
+    for (i = 1; i <= noOfArrgByUser; i++) {
+      let suffix;
+      if (i === 1) suffix = "st";
+      else if (i === 2) suffix = "nd";
+      else if (i === 3) suffix = "rd";
+      else suffix = "th";
+
+      let userValuesFromPrompt = prompt(`Enter your ${i}${suffix} value`);
+      while (
+        isNaN(userValuesFromPrompt) ||
+        userValuesFromPrompt.trim() === ""
+      ) {
+        alert("Please enter numeric values");
+
+        userValuesFromPrompt = prompt(`Enter your ${i}${suffix} value`);
+      }
+      arrg.push(+userValuesFromPrompt);
+    }
+    return arrg;
+  };
+  let argumentValuesByUser = userValues();
+  // argumentValuesByUser =
+  console.log(argumentValuesByUser); // array of user input
+  //////////// end ///////////////////
+
+  ///////// function for sum////////////
+  let sum1 = (...userArgument) => {
+    let sumOfUserValues = 0;
+    for (let value of userArgument) {
+      sumOfUserValues += value;
+    }
+    console.log(sumOfUserValues);
+  };
+  sum1(...argumentValuesByUser);
+  ///////////////////////////////////
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
