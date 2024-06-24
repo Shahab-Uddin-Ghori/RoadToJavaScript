@@ -388,3 +388,8 @@ returnVowels()
   console.log("after square each value of array by forEach()/higher order function");
   console.log(sqrOfArr);
 }
+
+// IIFE = Immediately Invoked Function Expression
+(function () {
+  console.log("FOO!");
+})();
