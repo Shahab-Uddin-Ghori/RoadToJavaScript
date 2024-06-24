@@ -296,12 +296,13 @@ myFunction6(3); // first parameter is use second is deafult parameter assignent 
 
 // Q. create a function using Function keyword that take a string as an argument and return the number of vowels in the string. also save vowels in array  
 let sentence = "shahab uddin ghori"
+console.log(sentence);
 let splitSentence = sentence.split("")
-console.log(splitSentence);
+// console.log(splitSentence);
 function returnVowels(){
   let vowels = []
   for (let i = 0; i<splitSentence.length; i++){
-    console.log(splitSentence[i]);
+    // console.log(splitSentence[i]);
     if(splitSentence[i] == "a"){
       vowels.push("a")
     }
@@ -322,3 +323,38 @@ function returnVowels(){
   console.log("number of vowels", vowels.length);
 }
 returnVowels()
+
+// for each loop in array.
+// The forEach loop is a method in JavaScript that allows you to iterate over an array and perform an operation on each element of the array.
+// callback 
+//It takes a callback function as an argument and applies it to each element of the array.
+// function can be pas as parameters, argument
+// callback function:  is a function which passed as an argumentn to another funcion.
+
+// foreach is only used for array. not for string
+
+
+{
+  console.log("\n\t\t for rach()");
+  console.log("\n\t example 1");
+  let arr = [1,2,5,7,9,12]
+  arr.forEach(function print(value){ //value at each index of array
+    console.log(value);
+  })
+}
+
+// foreach has three parameter.. 1. (each value/charachter of array) 2. (index of array) 3. (array )
+// name of parameters are self choice..
+{
+  console.log("\n\t example 1");
+  let arr = ["karchi", "islamabad", "hyderabad", "multan", "peshawar"]
+  arr.forEach(function print(value,index,arr){
+    console.log(value,index,arr);// value, index , array are three parameters of forEach() method
+  })
+
+}
+
+// Interview prespective
+// higher oder functions or higher order methods ?
+// higher order funtion/method are those function that take another function as a perameter or return another function..  
+//forEach() is H.O.F/HOM
