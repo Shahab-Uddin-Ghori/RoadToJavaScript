@@ -67,17 +67,75 @@ console.log(average([5, 7, 3, 6, 9, 4])); // argument
 console.log(average([5, 7, 14])); // argument
 
 // Default parameter
-function myFunction5 (a, b=5){
-  sum = a + b
-console.log(sum);
+function myFunction5(a, b = 5) {
+  sum = a + b;
+  console.log(sum);
 }
-myFunction5(5, 8) // these argument is use.
+myFunction5(5, 8); // these argument is use.
 
 // Default parameter
-function myFunction6 (a, b=5){
-  sum = a + b
-console.log(sum); // 8
+function myFunction6(a, b = 5) {
+  sum = a + b;
+  console.log(sum); // 8
 }
-myFunction6(3) // first parameter is use second is deafult parameter assignent in function defination/parameter 
+myFunction6(3); // first parameter is use second is deafult parameter assignent in function defination/parameter
+
+// Functions Rest Parameters
+// The Rest Operator, denoted by three consecutive dots (...), is a feature introduced in JavaScript (ES6) used for gathering the remaining elements of an iterable (like an array) into a single array variable.
+
+{
+  console.log("\n\n\t\t rest parameter in function");
+  function sum(...restArrg) {//rest parameter
+    let total = 0;
+    for (let value of restArrg) {
+      total += value;
+    }
+    return total;
+  }
+  console.log(sum(1,2,5));// 8
+  console.log(sum(10,12,15));// 37
+  console.log(sum(11,12,15,15,50,100,-11,-12,-15,-15));// 150
+
+}
+
+{
+  console.log("\n\t\t example 2");
+  function mul(...restArrg){//rest parameter
+    let mul = 1
+    for (let value of restArrg){
+      mul *= value
+    }
+    return mul
+  }
+  console.log(mul(2,3));// 6
+  console.log(mul(2,3));// 6
+  console.log(mul(1,2,3,4,5));// 120
+}
+
+{
+  console.log("\n\t\t example 3");
+  function arrgment() {
+    let arr = [];
+    for (let i = 1; i < 10; i++) {
+      arr.push(i);
+    }
+    return arr;
+  }
+  
+  let arrCountForSum = arrgment();
+  console.log(arrCountForSum);
+  
+  function sum(...arrg) { // rest parameter
+    let total = 0;
+    for (let value of arrg) {
+      total += value;
+    }
+    return total;
+  }
+  
+  console.log(sum(...arrCountForSum));
+}
+
+
 
 
