@@ -358,3 +358,20 @@ returnVowels()
 // higher oder functions or higher order methods ?
 // higher order funtion/method are those function that take another function as a perameter or return another function..  
 //forEach() is H.O.F/HOM
+
+// Q. for a given array of numbers, print the sqaure of each value and safe into new array..
+{
+  console.log("\n\n\Q. For a given array of numbers, print the sqaure of each value and safe into new array..\n\n");
+  let arr = [2,4,6,9,12,15];
+  console.log("arr before square");
+  console.log(arr);
+  let sqrOfArr = [];
+  arr.forEach(function valueOfArray(value){
+    value *= value
+    sqrOfArr.push(value)
+    // console.log(value);
+  })
+  console.log("after square each value of array by forEach()/higher order function");
+  console.log(sqrOfArr);
+
+}
