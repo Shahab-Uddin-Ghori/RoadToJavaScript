@@ -346,7 +346,7 @@ returnVowels()
 // foreach has three parameter.. 1. (each value/charachter of array) 2. (index of array) 3. (array )
 // name of parameters are self choice..
 {
-  console.log("\n\t example 1");
+  console.log("\n\t example 1");   
   let arr = ["karchi", "islamabad", "hyderabad", "multan", "peshawar"]
   arr.forEach(function print(value,index,arr){
     console.log(value,index,arr);// value, index , array are three parameters of forEach() method
@@ -373,5 +373,18 @@ returnVowels()
   })
   console.log("after square each value of array by forEach()/higher order function");
   console.log(sqrOfArr);
+}
 
+{
+  console.log("\n\n same qn by ()=>{} function\n\n");
+  let arr = [2,4,6,9,12,15];
+  console.log("arr before square");
+  console.log(arr);
+  let sqrOfArr = [];
+  arr.forEach((sqr) => {
+    sqr*=sqr
+    sqrOfArr.push(sqr)
+  })
+  console.log("after square each value of array by forEach()/higher order function");
+  console.log(sqrOfArr);
 }
