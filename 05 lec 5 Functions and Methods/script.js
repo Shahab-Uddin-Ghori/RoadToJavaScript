@@ -231,7 +231,7 @@ myFunction6(3); // first parameter is use second is deafult parameter assignent 
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-{
+/*{
   console.log("\n\t\texample 6");
   console.log(
     "Q.Make a program that take multiple input from user by asking.\n 1. saves these as array in variable and\n 2. sum of these argument by funtion name sum"
@@ -291,4 +291,34 @@ myFunction6(3); // first parameter is use second is deafult parameter assignent 
   sum1(...argumentValuesByUser);
   ///////////////////////////////////
 }
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+// Q. create a function using Function keyword that take a string as an argument and return the number of vowels in the string. also save vowels in array  
+let sentence = "shahab uddin ghori"
+let splitSentence = sentence.split("")
+console.log(splitSentence);
+function returnVowels(){
+  let vowels = []
+  for (let i = 0; i<splitSentence.length; i++){
+    console.log(splitSentence[i]);
+    if(splitSentence[i] == "a"){
+      vowels.push("a")
+    }
+    if(splitSentence[i] == "e"){
+      vowels.push("e")
+    }
+    if(splitSentence[i] == "i"){
+      vowels.push("i")
+    }
+    if(splitSentence[i] == "o"){
+      vowels.push("o")
+    }
+    if(splitSentence[i] == "u"){
+      vowels.push("u")
+    }
+  }
+  console.log(vowels);
+  console.log("number of vowels", vowels.length);
+}
+returnVowels()
