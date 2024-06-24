@@ -65,3 +65,19 @@ function average(numberArr) {
 
 console.log(average([5, 7, 3, 6, 9, 4])); // argument
 console.log(average([5, 7, 14])); // argument
+
+// Default parameter
+function myFunction5 (a, b=5){
+  sum = a + b
+console.log(sum);
+}
+myFunction5(5, 8) // these argument is use.
+
+// Default parameter
+function myFunction6 (a, b=5){
+  sum = a + b
+console.log(sum); // 8
+}
+myFunction6(3) // first parameter is use second is deafult parameter assignent in function defination/parameter 
+
+
