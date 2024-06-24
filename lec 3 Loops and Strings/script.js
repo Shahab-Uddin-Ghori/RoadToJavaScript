@@ -456,3 +456,18 @@ The entire string is returned.
   // console.log(username);
 
 }   
+
+// nested loop
+
+
+let myArr = [[2, 3, 4, 4, 4, 4], [5, 5], [5], [9, 8, 7]]; // 2D array
+
+console.log(myArr[0][0]);
+console.log(myArr[0][1]);
+console.log(myArr[0][2]);
+console.log(myArr[1][0]);
+console.log(myArr[1][1]);
+console.log(myArr[1][2]);
+console.log(myArr[2][0]);
+console.log(myArr[2][1]);
+console.log(myArr[2][2]);
