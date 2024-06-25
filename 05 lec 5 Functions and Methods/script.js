@@ -436,7 +436,7 @@ console.log("\n\n\t\t map() method on array");
 }
 
 ///// example///
-{
+{//map
   const students = [
     { name: 'Alice', grades: { math: 80, english: 90, science: 85 } },
     { name: 'Bob', grades: { math: 70, english: 75, science: 65 } },
@@ -450,5 +450,20 @@ const studentsWithAverages = students.map(student => {
 });
 
 console.log(studentsWithAverages);
+
+}
+{
+  //filter
+  const products = [
+    { name: 'Laptop', price: 1200, inStock: true },
+    { name: 'Mouse', price: 20, inStock: true },
+    { name: 'Keyboard', price: 70, inStock: false },
+    { name: 'Monitor', price: 300, inStock: true },
+    { name: 'USB Cable', price: 10, inStock: false },
+];
+
+const availableExpensiveProducts = products.filter(product => product.inStock && product.price > 50);
+
+console.log(availableExpensiveProducts);
 
 }
