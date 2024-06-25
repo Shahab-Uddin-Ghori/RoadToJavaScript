@@ -545,3 +545,20 @@ const filteredTeams = teams.map(team => ({
 console.log(filteredTeams);
 
 }
+
+{// Combining map() and filter() with Multiple Conditions
+  const employees = [
+    { name: 'Alice', department: 'HR', salary: 50000, active: true },
+    { name: 'Bob', department: 'Engineering', salary: 60000, active: false },
+    { name: 'Charlie', department: 'Finance', salary: 70000, active: true },
+    { name: 'Dave', department: 'Engineering', salary: 45000, active: true },
+];
+
+const minSalary = 50000;
+const activeHighSalaryEmployees = employees
+    .filter(employee => employee.active && employee.salary >= minSalary)
+    .map(employee => ({ name: employee.name, department: employee.department }));
+
+console.log(activeHighSalaryEmployees);
+
+}
