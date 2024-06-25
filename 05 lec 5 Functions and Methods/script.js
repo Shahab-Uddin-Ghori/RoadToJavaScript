@@ -562,3 +562,24 @@ const activeHighSalaryEmployees = employees
 console.log(activeHighSalaryEmployees);
 
 }
+
+{ //  Data Aggregation and Transformation
+  const transactions = [
+    { id: 1, category: 'Groceries', amount: 50 },
+    { id: 2, category: 'Entertainment', amount: 100 },
+    { id: 3, category: 'Groceries', amount: 30 },
+    { id: 4, category: 'Utilities', amount: 60 },
+    { id: 5, category: 'Entertainment', amount: 40 },
+];
+
+const categoryTotals = transactions
+    .map(transaction => ({ [transaction.category]: transaction.amount }))
+    .reduce((acc, curr) => {
+        const category = Object.keys(curr)[0];
+        acc[category] = (acc[category] || 0) + curr[category];
+        return acc;
+    }, {});
+
+console.log(categoryTotals);
+
+}
