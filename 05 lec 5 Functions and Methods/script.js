@@ -332,6 +332,7 @@ returnVowels()
 // callback function:  is a function which passed as an argumentn to another funcion.
 
 // foreach is only used for array. not for string
+// it do not return new array like map() method
 
 
 {
@@ -392,5 +393,35 @@ returnVowels()
 // IIFE = Immediately Invoked Function Expression
 (function () {
   console.log("FOO!");
+
 })();
 
+// map() method
+//In JavaScript, map() is a method of the Array object. It creates a new array by calling a function on every element of the original array and storing the results in a new array.
+// map return new array while forEach not.
+// it is a higher-order function that takes a callback function as an argument.
+
+////////////////////////// diff btw map() and forEach()/////////////////////////////////////////////////////////////////////
+//While both map() and forEach() perform similar actions, there are some key differences in their performance. One significant difference is that map() returns a new array, whereas forEach() does not. This means that if you need to create a new array based on the values of an existing array, map() is the better choice
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////.....
+console.log("\n\n\t\t map() method on array");
+{
+  console.log("example1");
+  let arr =[1,4,6,8]
+  arr.map((value)=>{
+    console.log(value);
+  })
+
+}
+{
+
+  console.log("example2");
+  let arr =[1,4,6,8]
+  let newarr =  arr.map((value)=>{
+    value*=value
+    return value
+  })
+  console.log(newarr);
+}
+
+///////// filter()/////////
