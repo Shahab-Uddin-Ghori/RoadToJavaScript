@@ -434,3 +434,21 @@ console.log("\n\n\t\t map() method on array");
   })
   console.log(arrFilter);
 }
+
+///// example///
+{
+  const students = [
+    { name: 'Alice', grades: { math: 80, english: 90, science: 85 } },
+    { name: 'Bob', grades: { math: 70, english: 75, science: 65 } },
+    { name: 'Charlie', grades: { math: 90, english: 85, science: 95 } },
+];
+
+const studentsWithAverages = students.map(student => {
+    const grades = Object.values(student.grades);
+    const average = grades.reduce((acc, grade) => acc + grade, 0) / grades.length;
+    return { ...student, average };
+});
+
+console.log(studentsWithAverages);
+
+}
