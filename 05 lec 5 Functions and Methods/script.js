@@ -467,3 +467,18 @@ const availableExpensiveProducts = products.filter(product => product.inStock &&
 console.log(availableExpensiveProducts);
 
 }
+
+{ // Nested map() and filter()
+  const numberArrays = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12],
+];
+
+const processedNumbers = numberArrays.map(arr =>
+    arr.filter(num => num % 2 !== 0).map(num => num * num)
+);
+
+console.log(processedNumbers);
+
+}
