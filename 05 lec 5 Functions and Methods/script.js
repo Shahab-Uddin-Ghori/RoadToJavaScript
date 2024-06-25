@@ -599,3 +599,33 @@ const shippedOrdersAboveMinTotal = orders.filter(order => order.status === 'ship
 console.log(shippedOrdersAboveMinTotal);
 
 }
+
+{//  Transforming Data with Nested Arrays
+  const users = [
+    {
+        name: 'Alice',
+        posts: [
+            { title: 'Post 1', likes: 50 },
+            { title: 'Post 2', likes: 20 },
+            { title: 'Post 3', likes: 70 }
+        ]
+    },
+    {
+        name: 'Bob',
+        posts: [
+            { title: 'Post 1', likes: 10 },
+            { title: 'Post 2', likes: 30 },
+            { title: 'Post 3', likes: 90 }
+        ]
+    }
+];
+
+const minLikes = 30;
+const usersWithPopularPosts = users.map(user => ({
+    ...user,
+    posts: user.posts.filter(post => post.likes > minLikes)
+}));
+
+console.log(usersWithPopularPosts);
+
+}
