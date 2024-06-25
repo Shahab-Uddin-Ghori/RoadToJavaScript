@@ -482,3 +482,20 @@ const processedNumbers = numberArrays.map(arr =>
 console.log(processedNumbers);
 
 }
+
+{// Transforming and Filtering with map() and filter()
+  const sentences = [
+    'The quick brown fox jumps over the lazy dog',
+    'Hello world',
+    'JavaScript is awesome',
+    'I love coding',
+    'Functional programming is powerful',
+];
+
+const longUppercaseSentences = sentences
+    .filter(sentence => sentence.split(' ').length >= 5)
+    .map(sentence => sentence.toUpperCase());
+
+console.log(longUppercaseSentences);
+
+}
