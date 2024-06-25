@@ -425,3 +425,12 @@ console.log("\n\n\t\t map() method on array");
 }
 
 ///////// filter()/////////
+
+
+{
+  let arr = [1,3,5,6,8,10,15,14,22]
+  let arrFilter = arr.filter((evenValue) => {
+   return evenValue % 2 === 0;
+  })
+  console.log(arrFilter);
+}
