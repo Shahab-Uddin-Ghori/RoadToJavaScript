@@ -515,3 +515,33 @@ const usersWithHighestScores = users.map(user => {
 console.log(usersWithHighestScores);
 
 }
+
+{ //Transforming Nested Data Structures
+  const teams = [
+    {
+        name: 'Team A',
+        players: [
+            { name: 'Alice', score: 50 },
+            { name: 'Bob', score: 40 },
+            { name: 'Charlie', score: 60 }
+        ]
+    },
+    {
+        name: 'Team B',
+        players: [
+            { name: 'Dave', score: 70 },
+            { name: 'Eve', score: 65 },
+            { name: 'Frank', score: 55 }
+        ]
+    }
+];
+
+const threshold = 50;
+const filteredTeams = teams.map(team => ({
+    ...team,
+    players: team.players.filter(player => player.score > threshold)
+}));
+
+console.log(filteredTeams);
+
+}
