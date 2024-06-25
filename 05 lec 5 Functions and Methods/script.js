@@ -583,3 +583,19 @@ const categoryTotals = transactions
 console.log(categoryTotals);
 
 }
+
+{//Advanced Filtering with Nested Conditions
+  const orders = [
+    { id: 1, status: 'shipped', total: 150 },
+    { id: 2, status: 'pending', total: 200 },
+    { id: 3, status: 'shipped', total: 50 },
+    { id: 4, status: 'shipped', total: 300 },
+    { id: 5, status: 'pending', total: 100 },
+];
+
+const minTotal = 100;
+const shippedOrdersAboveMinTotal = orders.filter(order => order.status === 'shipped' && order.total > minTotal);
+
+console.log(shippedOrdersAboveMinTotal);
+
+}
