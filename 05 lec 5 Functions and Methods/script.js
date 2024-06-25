@@ -499,3 +499,19 @@ const longUppercaseSentences = sentences
 console.log(longUppercaseSentences);
 
 }
+
+{// Advanced Object Transformation
+  const users = [
+    { name: 'Alice', scores: [50, 60, 70, 80, 90] },
+    { name: 'Bob', scores: [20, 30, 40, 50, 60] },
+    { name: 'Charlie', scores: [80, 85, 90, 95, 100] },
+];
+
+const usersWithHighestScores = users.map(user => {
+    const highestScore = Math.max(...user.scores);
+    return { name: user.name, highestScore };
+});
+
+console.log(usersWithHighestScores);
+
+}
