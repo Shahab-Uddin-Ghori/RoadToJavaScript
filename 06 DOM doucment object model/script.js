@@ -187,3 +187,36 @@ This statement retrieves the visible text content inside the element with the id
 }
 */
 
+
+
+//2. getElementByClassName
+// use for changing multiple tag at a time
+ //same work can do with class
+
+ {
+    let domByClassName = document.getElementsByClassName("para") // for change style of same class tags
+}
+/*
+{
+    let domByClassName = document.getElementsByClassName("para")
+    domByClassName.innerText = "change p to h3 by getElementClassName</h3>" // will change nothing bcz its to sigle para but HTMLcollection so to change it we have to iterate by loop
+    console.log(domByClassName);
+}
+*/
+// change multiple para with iterate it and using getElementByClassName
+/*
+{
+        // Get the collection of elements with the class "para"
+        let domByClassName = document.getElementsByClassName("para");
+
+        // Iterate over the collection and change the innerText of each element
+        for (let i = 0; i < domByClassName.length; i++) {
+            domByClassName[i].innerText = "Changed text for p to h3";
+        }
+
+        // Log the collection to verify the changes
+        console.log(domByClassName);
+}
+        */
+       // same work we can do
+
