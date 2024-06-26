@@ -328,6 +328,7 @@ returnVowels()
 // The forEach loop is a method in JavaScript that allows you to iterate over an array and perform an operation on each element of the array.
 // callback 
 //It takes a callback function as an argument and applies it to each element of the array.
+// it is a higher order funtion
 // function can be pas as parameters, argument
 // callback function:  is a function which passed as an argumentn to another funcion.
 
@@ -629,3 +630,56 @@ const usersWithPopularPosts = users.map(user => ({
 console.log(usersWithPopularPosts);
 
 }
+
+///////////////// practice Qns//////////////////
+
+{
+  //Q, filter marks of students which are greater than 90 and save it in new array
+  console.log("\n\nfilter marks of students which are greater than 90\n\n");
+let marks = [87, 93, 64, 99, 86]
+let Marks90Plus = marks.filter((marks)=>{
+ return marks > 90
+})
+console.log(Marks90Plus);
+}
+{
+  console.log("\n\nSame Qn by another way");
+  let markOfStudent = [30, 50, 98, 91, 99, 34 ,31, 90 ,90 ,91, 91, 91]
+  let greaterMarksThan90 =[]
+  markOfStudent.forEach((value)=>{
+    if (value > 90) {
+      greaterMarksThan90.push(value)
+    }
+  })
+  console.log(greaterMarksThan90);
+}
+{
+  // no of vowels in sentence
+  console.log("\n\nfilter vowels by filter method\n\n");
+  let sentence = "this is my sentence to check no of vowels"
+  console.log(sentence);
+  let sentenceToArray = sentence.split("")
+  let vowelsInSentence = sentenceToArray.filter((vowels)=>{
+    return vowels == "a" || vowels == "e" || vowels == "i" || vowels == "o" || vowels == "u"
+  })
+  console.log(vowelsInSentence);
+}
+
+{
+  // Q. Take an input n from user. create an array of numbers from 1 to n.
+  console.log("\n\nQ. Take an input n from user. create an array of numbers from 1 to n.");
+  let userInp = prompt("enter number between 1 to 10")
+  
+    while( isNaN(userInp) || userInp === ""){
+      console.log(userInp);
+      alert("plz enter numeric value")
+      userInp = prompt("enter number between 1 to 10")
+    }
+    userInp = +userInp
+    let array = []
+    for (let i = 0; i<userInp; i++){
+      array.push(i)
+    }
+  console.log(userInp);
+  console.log(array);
+  }
