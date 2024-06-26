@@ -695,5 +695,5 @@ console.log(Marks90Plus);
   let mul = array.reduce((res, currVal)=>{
     return res * currVal
   })
-  console.log("sum of val of array is ", mul);
+  console.log("factorial of val of array is ", mul);
   }
