@@ -444,3 +444,27 @@ console.log("\n\t\t\tslice() method");
   console.log(Array.of(score1, score2, score3,className,className2)); // convert variable of values into array
 
 }
+
+// shallow Copy and Deep Copy
+
+// shallow Copy
+// A shallow copy of an array creates a new array that contains references to the same elements as the original array. This means that if the elements themselves are objects or arrays, changes to the nested objects/arrays will be reflected in both the original and the copied arrays.
+
+{
+  // Using slice() method:
+  console.log("examples 1");
+  let originalArray = [1, 2, 3, 4, 5];
+  let shallowCopy = originalArray.slice();
+  
+  // Modifying the shallow copy
+  shallowCopy[0] = 10;
+  console.log(originalArray); // [1, 2, 3, 4, 5] (original array is not affected)
+  console.log(shallowCopy);   // [10, 2, 3, 4, 5]  
+
+}
+
+{
+  //
+  console.log("examples 2");
+
+}
