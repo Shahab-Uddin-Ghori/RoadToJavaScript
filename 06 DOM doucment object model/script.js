@@ -91,12 +91,12 @@ It's not suitable for scripts that need to execute as soon as possible (e.g., cr
 console.log("\n\n DOM manipulation: getElementById\n\n");
 
 
-console.log("let domById = document.getElementById(\"mainHeading\")");
+console.log("let domById = document.getElementById(\"mainHeading\")");// for style change by js
 // element
 /*
 {
 
-    let domById = document.getElementById("mainHeading")
+    let domById = document.getElementById("mainHeading") 
     console.log(domById); // complete h1 with attribute
 }
 */
@@ -112,7 +112,7 @@ console.log("let domById = document.getElementById(\"mainHeading\")");
 */
 
 //getElementById.innerHTML
-console.log("\n\nlet domById = document.getElementById(\"mainHeading\").innerHTML");
+console.log("\n\nlet domById = document.getElementById(\"mainHeading\").innerHTML"); // for text and tag change ny js
 /*
 {
     let domById = document.getElementById("mainHeading").innerHTML
@@ -144,4 +144,30 @@ console.log("\n\nlet domById = document.getElementById(\"mainHeading\").innerHTM
 }
 }
 
+*/
+
+//innerText
+console.log("\n\nlet domById = document.getElementById(\"mainHeading\").innerText"); // for text and tag change ny js
+/*
+{// print text
+    let domById = document.getElementById("mainHeading").innerText
+    console.log(domById);
+}
+    */
+
+/*
+//innerText change text
+{
+    let domById = document.getElementById("mainHeading")
+    domById.innerText = "change text by innerText of h1"
+    console.log(domById);
+}
+*/
+//innerText will not change text as innerHTML do
+/*
+{
+    let domById = document.getElementById("mainHeading")
+    domById.innerText = "<p>change text by innerText of h1</p>"
+    console.log(domById);
+}
 */
