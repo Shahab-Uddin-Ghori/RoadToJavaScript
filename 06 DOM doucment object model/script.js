@@ -193,9 +193,14 @@ This statement retrieves the visible text content inside the element with the id
 // use for changing multiple tag at a time
  //same work can do with class
 
+ //print HTML collection we have to iterate it for changing in it bcz it is HTMLcollection
+ /*
  {
     let domByClassName = document.getElementsByClassName("para") // for change style of same class tags
+    console.log(domByClassName);
 }
+    */
+
 /*
 {
     let domByClassName = document.getElementsByClassName("para")
@@ -203,6 +208,7 @@ This statement retrieves the visible text content inside the element with the id
     console.log(domByClassName);
 }
 */
+
 // change multiple para with iterate it and using getElementByClassName
 /*
 {
@@ -218,5 +224,30 @@ This statement retrieves the visible text content inside the element with the id
         console.log(domByClassName);
 }
         */
-       // same work we can do
 
+    //   3. document.getElementsByTagName
+    // same work we can do but by tag name it may be multiple so we have also do iterate it for getting multiple changing by tag name
+    
+    /*
+    {
+        let btn = document.getElementsByTagName("button")
+        console.log(btn);
+    }
+    {// it will not work bcz it will also return a HTML collecion so we have to iterate it..
+        let btn = document.getElementsByTagName("button")
+        btn.innerText ="check on"
+        console.log(btn);
+    }
+    // it will change button content check to check on
+    {
+        let btn = document.getElementsByTagName("button");
+
+        // Iterate over the collection and change the innerText of each button
+        for (let i = 0; i < btn.length; i++) {
+            btn[i].innerText = "check on";
+        }
+
+        // Log the collection to verify the changes
+        console.log(btn);
+    }
+    */
