@@ -89,43 +89,8 @@ It's not suitable for scripts that need to execute as soon as possible (e.g., cr
 // 1. selecting with ID
 // syntax document.getElementById("idName")
 console.log("\n\n DOM manipulation: getElementById\n\n");
-{
 
-    let dombyId = document.getElementById("mainHeading") //Both can change element and text
-    dombyId.innerHTML = "<p>change to p </p>" // complete 
-    console.log(dombyId);
-}
-{
-    let dombyId = document.getElementById("mainHeading").innerText // only text can change not element
-    console.log(dombyId);
-}
-{
-    let dombyId = document.getElementById("mainHeading").innerHTML 
-    dombyId.innerHTML = "<h6>asda</h6>"
-    console.log(dombyId);
-}
-console.log("\nchanging styles \n");
-{
-    let dombyId = document.getElementById("mainHeading")
-    // dombyId.style = "font-size:6rem; color:red; padding: 1rem; background-color:aqua;"
-    // console.log(dombyId);
-}
-
-
-
-// 2. selecting with Class
-// syntax document.getElementByClassName("className")
-console.log("\n\n DOM manipulation: getElementByClass\n\n");
-
-{
-let domByClass = document.getElementsByClassName("para")// HTML collection like an array has lenght but not exacltly same. 
-domByClass.innerHTML = "<h6>sdfa</h6>"
-console.log(domByClass); // selected element in the form of HTML collection
-
-}
-{console.log("\nChanging style of all para by className");
-    let domByClass = document.getElementsByClassName("para").innerHTML// innerHTML can change complete element unlike innerText only text.
-    domByClass = "<h1>para change to h1 </h1>"
-    console.log(domByClass); // selected element in the form of HTML collection
-}
+// element
+let domById = document.getElementById("mainHeading")
+console.log(domById); // complete h1 with attribute
 
