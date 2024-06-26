@@ -488,3 +488,16 @@ console.log("\n\t\t\tslice() method");
   console.log(shallowCopy);   // [10, 2, 3, 4, 5]
   
 }
+
+{
+//Using Array.from() method:
+
+  let originalArray = [1, 2, 3, 4, 5];
+let shallowCopy = Array.from(originalArray);
+
+// Modifying the shallow copy
+shallowCopy[0] = 10;
+console.log(originalArray); // [1, 2, 3, 4, 5] (original array is not affected)
+console.log(shallowCopy);   // [10, 2, 3, 4, 5]
+
+}
