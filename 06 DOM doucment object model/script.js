@@ -57,6 +57,12 @@ console.log("changed done just comment out..");
 console.log("\n\nchange h1 element to h2 by js using window object..");
 console.log("changed done just comment out..");
 
+//changing dynamically bg color of body using js.
+// console.dir(document.body.style = "background-color: aqua;");
+
+// use of DOM ?
+// dynamically changes (changes depend on user) DOM is used...
+// DOM involved changes in webpage by javaScript. not by HTML and CSS  
 
 
 
