@@ -667,7 +667,7 @@ console.log(Marks90Plus);
 
 {
   // Q. Take an input n from user. create an array of numbers from 1 to n.
-  console.log("\n\nQ. Take an input n from user. create an array of numbers from 1 to n.");
+  console.log("\n\nQ. Take an input n from user. create an array of numbers from 1 to n.\n make sum of these values of array by reduce method");
   let userInp = prompt("enter number between 1 to 10")
   
     while( isNaN(userInp) || userInp === ""){
@@ -677,9 +677,23 @@ console.log(Marks90Plus);
     }
     userInp = +userInp
     let array = []
-    for (let i = 0; i<userInp; i++){
+    for (let i = 1; i<=userInp; i++){
       array.push(i)
     }
   console.log(userInp);
   console.log(array);
+  console.log("sum of these array");
+
+
+  // reduce method
+  //The array reduce in JavaScript is a predefined method used to reduce an array to a single value by passing a callback function on each element of the array.
+
+  let sum = array.reduce((res, currVal)=>{
+    return res + currVal
+  })
+  console.log("sum of val of array is ", sum);
+  let mul = array.reduce((res, currVal)=>{
+    return res * currVal
+  })
+  console.log("sum of val of array is ", mul);
   }
