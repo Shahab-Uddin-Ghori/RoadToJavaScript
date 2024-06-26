@@ -112,7 +112,36 @@ console.log("let domById = document.getElementById(\"mainHeading\")");
 */
 
 //getElementById.innerHTML
+console.log("\n\nlet domById = document.getElementById(\"mainHeading\").innerHTML");
+/*
 {
     let domById = document.getElementById("mainHeading").innerHTML
     console.log(domById); // Text inside h1
 }
+*/
+
+//innerHTML text change
+/*
+{
+        let domById = document.getElementById("mainHeading")
+        domById.innerHTML = "h1 text changed by innerHTML"
+        console.log(domById); // Text inside h1
+}
+*/
+
+//innerHTML tag change but outer will same 
+
+/*
+{
+    let domById = document.getElementById("mainHeading")
+    domById.innerHTML = "<p> change h1 to p</p>" // tag change h1 to p
+    console.log(domById);
+    console.log(domById.outerHTML);//<h1 id="mainHeading"><p> change h1 to p</p></h1>
+{
+    
+   // yaha ye ho raha hai k jab bhi ham innerHTML se kuch change krty hai tag ko to orignal tag nhi change hota balky orignal tag k undar // ek new tag ban jata hai ho k line 138 me dekha ja sakta hai
+    
+}
+}
+
+*/
