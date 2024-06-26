@@ -66,6 +66,48 @@ console.log("changed done just comment out..");
 
 
 
+/////////////////// IMP ////////////////
+// if we write our script tag or link before body Means The script load first before body the body will be null
+// console.dir(document.body) // null(empty object).
+// we cannot access DOM element if we put script tag before body
+
+///// explantion of script tag before, after and defer attribute
+/*Before <body>:
+Scripts placed in the <head> section are generally executed as soon as the browser encounters them. This can lead to errors if your script relies on DOM elements that haven't been parsed yet (since the browser hasn't reached the <body> yet).
+After <body>:
+Scripts placed before the closing </body> tag execute once the entire HTML document has been parsed, including the DOM elements. This ensures you can access elements without encountering errors. However, this placement can potentially delay the execution of your script, impacting the perceived performance of your page.
+The defer Attribute:
+
+The defer attribute instructs the browser to download the script in parallel with HTML parsing but defer its execution until after the HTML document, including the DOM, has been fully parsed. This allows your script to access DOM elements without blocking the initial rendering of your page.
+Key Points about defer:
+Scripts with defer are generally executed in the order they appear in the HTML (though exact timing might vary slightly across browsers).
+It's not suitable for scripts that need to execute as soon as possible (e.g., critical rendering path code).
+*/
+
+
+// DOM Manipulation
+// 1. selecting with ID
+// syntax document.getElementById("idName")
+console.log("\n\n DOM manipulation: getElementById\n\n");
+{
+
+    let dombyId = document.getElementById("mainHeading") // complete element print
+    console.log(dombyId);
+}
+{
+    let dombyId = document.getElementById("mainHeading").innerText // only text can change not element
+    console.log(dombyId);
+}
+{
+    let dombyId = document.getElementById("mainHeading").innerHTML //Both can change element and text
+    console.log(dombyId);
+}
+console.log("\nchanging styles \n");
+{
+    let dombyId = document.getElementById("mainHeading")// only text can change not element
+    // dombyId.style = "font-size:6rem; color:red; padding: 1rem; background-color:aqua;"
+    // console.log(dombyId);
+}
 
 
 
