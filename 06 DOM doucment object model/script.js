@@ -171,3 +171,19 @@ console.log("\n\nlet domById = document.getElementById(\"mainHeading\").innerTex
     console.log(domById);
 }
 */
+
+// differce between document.getElementById("mainHeading"),document.getElementById("mainHeading").innerHTML||document.getElementById("mainHeading").innerText
+/*
+{
+let domById = document.getElementById("mainHeading"):
+
+This statement retrieves the HTML element with the id "mainHeading" and assigns the element itself to the variable domById.
+let domById = document.getElementById("mainHeading").innerHTML:
+
+This statement retrieves the HTML content inside the element with the id "mainHeading" and assigns that content (including HTML tags) to the variable domById.
+let domById = document.getElementById("mainHeading").innerText:
+
+This statement retrieves the visible text content inside the element with the id "mainHeading" (excluding HTML tags) and assigns that text to the variable domById
+}
+*/
+
