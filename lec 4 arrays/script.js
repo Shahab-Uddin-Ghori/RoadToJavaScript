@@ -514,3 +514,17 @@ console.log(originalArray); // [1, 2, 3, 4, 5] (original array is not affected)
 console.log(shallowCopy);   // [10, 2, 3, 4, 5]
 
 }
+
+//These examples demonstrate how to create shallow copies of arrays. Note that if the elements of the array are objects or arrays, changes to those nested objects or arrays will be reflected in both the original and the copied arrays:
+
+{
+  let originalArray = [{a: 1}, {b: 2}];
+let shallowCopy = originalArray.slice();
+
+shallowCopy[0].a = 10;
+console.log(originalArray); // [{a: 10}, {b: 2}] (nested object is affected)
+console.log(shallowCopy);   // [{a: 10}, {b: 2}]
+
+}
+
+//In this case, since the array contains objects, modifying the objects inside the shallow copy will also affect the objects inside the original array.
