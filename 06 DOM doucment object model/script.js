@@ -90,7 +90,26 @@ It's not suitable for scripts that need to execute as soon as possible (e.g., cr
 // syntax document.getElementById("idName")
 console.log("\n\n DOM manipulation: getElementById\n\n");
 
+
+console.log("let domById = document.getElementById(\"mainHeading\")");
 // element
-let domById = document.getElementById("mainHeading")
-console.log(domById); // complete h1 with attribute
+/*
+{
+
+    let domById = document.getElementById("mainHeading")
+    console.log(domById); // complete h1 with attribute
+}
+*/
+
+
+// changing style 
+/*
+{
+    let domById = document.getElementById("mainHeading")
+    domById.style = "color:red;" //h1 color changed to red
+    console.log(domById); 
+}
+*/
+
+
 
