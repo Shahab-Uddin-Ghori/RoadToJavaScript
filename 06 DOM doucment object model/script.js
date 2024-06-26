@@ -111,5 +111,8 @@ console.log("let domById = document.getElementById(\"mainHeading\")");
 }
 */
 
-
-
+//getElementById.innerHTML
+{
+    let domById = document.getElementById("mainHeading").innerHTML
+    console.log(domById); // Text inside h1
+}
