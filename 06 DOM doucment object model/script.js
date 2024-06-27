@@ -271,3 +271,12 @@ console.log("\n\ document.querySelector(Id/Class/tagName)");
             console.log(element);
         }
     }
+
+    ////properties of Dom Manipulation
+
+    console.log("\n\n Properties Of DOM Manipulation");
+
+    //1. tagName : return the tag for element nodes
+    //2. innerText: return the text content of the element and its all childern
+    //3. innerHTML: return the plain Text or HTML content in the  element
+    //4. textContent: return textual content even for hidden elements.
