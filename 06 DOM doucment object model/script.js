@@ -251,3 +251,23 @@ This statement retrieves the visible text content inside the element with the id
         console.log(btn);
     }
     */
+
+    /////////////////4. querySelector and querySelectorAll
+    // document.querySelector("#Id/.Class/tagName") //return first element 
+    // document.querySelectorAll("#Id/.class/tagName") //Return a NodeListf
+
+    //NodeList
+    //A NodeList is an array-like collection (list) of Node Objects. The nodes in a NodeList can be accessed by index (starts at 0). The length property returnns the number of nodes in a NodeList.
+console.log("\n\ document.querySelector(Id/Class/tagName)");
+    {
+        console.log("document.querySelector");
+        let element = document.querySelector("p")
+        console.dir(element)
+        console.log(element);
+        console.log("document.querySelectorAll");
+        {
+            let element =document.querySelectorAll("p")
+            console.dir(element)
+            console.log(element);
+        }
+    }
