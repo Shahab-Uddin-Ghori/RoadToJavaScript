@@ -347,3 +347,22 @@ console.log("\n\ document.querySelector(Id/Class/tagName)");
         let element = document.querySelector("div").textContent
         console.log(element);
     }
+
+    /// practice Question of DOM......
+    // change sentence of h2 by js 
+    let pracH2 = document.querySelector("#h2")
+    pracH2.innerText += "from Apna Collage" 
+
+        // change /add text in all divs
+    let multipleDiv = document.querySelectorAll(".divClass")
+    console.log(multipleDiv); // nodelist
+    let index = 0;
+    for (eacDiv of multipleDiv){
+        index++
+        eacDiv.innerText = `text change in div ${index}`
+    }
+
+
+
+
+ 
