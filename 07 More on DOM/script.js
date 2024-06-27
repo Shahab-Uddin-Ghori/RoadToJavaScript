@@ -112,6 +112,52 @@ div2.prepend(h3)
 div2.prepend(h2)
 div2.prepend(h1)
 
+  // 3. node.after(element) and node.bfter(element) (add element before and after of given element)
+ let div3 = document.createElement("div")
+div3.style = "width: 100%;background-color:skyblue;margin-top:1rem;padding:1rem;"
+ div3.setAttribute("id","div3")
+//  console.log(div3.getAttribute(id)); // div3
+// create form
+let form = document.createElement("form")
+
+// create input and manipulation
+let input = document.createElement("input")
+input.setAttribute("type","text")
+input.setAttribute("placeholder","Write username")
+input.setAttribute("required","required")
+console.log(input);
+
+// create button
+let button = document.createElement("button")
+button.innerText = "Check"
+
+//create h1
+let sech1 = document.createElement("h1")
+sech1.innerText = "This h1 is inserted before form by js"
+sech1.style = "text-align:center;"
+
+//create para
+let para2 = document.createElement("p")
+para2.innerText = "this para is inserted after button by js"
+para2.style = "text-align:center;"
+
+// first we use append for inserting div at the end of body and form in the div then we use before and after
+body.append(div3)
+div3.append(form)
+form.append(input)
+
+// node.after(element)
+input.after(button)
+
+//node.before(element)
+form.before(sech1)
+button.after(para2)
+// node.after(element)
+
+
+
+
+
 
 
 

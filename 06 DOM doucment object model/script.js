@@ -320,6 +320,7 @@ console.log("\n\ document.querySelector(Id/Class/tagName)");
     //firstchilde --> return fist element of parent tag
     //lastchilde --> return last element of parent tag
 
+
     // DOM tree has tree Nodes
     //1. #text
     //2. # comment
@@ -365,4 +366,4 @@ console.log("\n\ document.querySelector(Id/Class/tagName)");
 
 
 
- 
+ // agar hamain kisi element k ander koi asi changes krni hai jo kisi tag ki madad se ho pye. usly liye inner.HTML use lrygy
