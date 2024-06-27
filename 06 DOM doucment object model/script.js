@@ -280,3 +280,70 @@ console.log("\n\ document.querySelector(Id/Class/tagName)");
     //2. innerText: return the text content of the element and its all childern
     //3. innerHTML: return the plain Text or HTML content in the  element
     //4. textContent: return textual content even for hidden elements.
+
+    //1. tagName : return the tag for element nodes
+    {
+        console.log("tagName");
+        let element = document.querySelector("p")
+        console.log(element.tagName);//p
+
+    }
+    {
+        let element = document.querySelector("h1")
+        console.log(element.tagName);//p
+
+    }
+    {
+        let element = document.querySelector("div")
+        console.log(element.tagName);//p
+
+    }
+    {
+        let element = document.querySelector("h3")
+        console.log(element.tagName);//p
+
+    }
+
+    /*
+    {
+        // if tagName is not present error appear
+        let element = document.querySelector("h2")
+        console.log(element.tagName);//p
+
+    }
+*/
+
+
+    //2. innerText: return the text content of the element and its all childern
+    //Element = Parent ----> childNodes,Childern
+    //Element = Parent -----> childern/siblings
+    //firstchilde --> return fist element of parent tag
+    //lastchilde --> return last element of parent tag
+
+    // DOM tree has tree Nodes
+    //1. #text
+    //2. # comment
+    //3. # element// in DOM we work on elements
+    {
+        console.dir(document.body.firstChild)//#text
+    }
+    //2. innerText // text return
+    {
+        console.log("\n\n innerText: return the text content of the element and its all childern");
+        let element = document.querySelector("div").innerText
+        console.log(element)
+    }
+
+    // 3. innerHTML // html content with text return. tag with their content
+    {
+        console.log("\n\n innerHTML: return the text content of the element and its all childern");
+        let element = document.querySelector("div").innerHTML
+        console.log(element)
+    }
+    //4. textContent: return textual content even for hidden elements.
+    // work same as innerText but also return hidden text
+    {
+        console.log("textContent: return textual content even for hidden elements.");
+        let element = document.querySelector("div").textContent
+        console.log(element);
+    }
