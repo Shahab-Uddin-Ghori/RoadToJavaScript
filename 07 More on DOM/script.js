@@ -154,8 +154,15 @@ form.before(sech1)
 button.after(para2)
 // node.after(element)
 
+console.log("\n\t\t Delete Node");
+// delte node. 
+let createPara = document.createElement("p")
+body.append(createPara)
+console.log(createPara);
+createPara.innerText = "this is para of delete learning by DOM"
 
-
+// delteing
+createPara.remove()
 
 
 

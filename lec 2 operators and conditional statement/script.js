@@ -61,6 +61,7 @@ let d4 = --b4; // d is 3, b is 3 (prefix decrement)
 // Purpose: Converts its operand to a boolean and negates it.
 let a5 = true;
 let b5 = !a; // b is false
+console.log(b5);
 
 let c5 = 0;
 let d5 = !c; // d is true (0 is falsy, so !0 is true)

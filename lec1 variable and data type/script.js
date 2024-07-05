@@ -68,10 +68,10 @@ console.log(myName); // my name value is reassigned
 console.log("Learning Const on Global and Block Scope Checking its Behaivour");
 
 const myName3 = "usman" // create global scope
-console.log(myName3 + "this is getting in globally"); 
+console.log(myName3 + " this is getting in globally"); 
 
 {
-    console.log(myName3 + "this is gettin in scope"); // getting consloe on block scope
+    console.log(myName3 + " this is gettin in scope"); // getting consloe on block scope
     const myhobby3 = "MMA, Swimming and gaming" // creating varible on block scope
     console.log("consloe on block scope " + myhobby3);
 }
@@ -134,7 +134,7 @@ console.log(userName); // console show undefine bcz variable is initilized but n
 
 console.log("\n\n\n");
 console.log("*******null**********");
-// an assignment value that represents no value or no object.  
+// an assignment value that represents no value or absence of  object.  
 let array = null; //The null value represents the intentional absence of any object value.
 console.log(array);
 
